@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 가이드</title>
+	<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+	<style>
+		.data_loading_in{height:100px;}
+	</style>
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">전체 공통</h1>
+	
+	<dl class="notice">
+		<dt>기본사항</dt>
+		<dd>
+			<ol>
+				<li></li>
+			</ol>
+		</dd>
+	</dl>
+
+	<h2 class="h2_guide">입력폼 grid</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="write_form">
+				<dl class="rows">
+					<dt class="title">
+						<i class="require">필수항목</i>
+						게시글 카테고리
+					</dt>
+					<dd class="form">
+						<div class="form_group">
+							<select class="form_control" title="">
+								<option>고민있어요</option>
+							</select>
+						</div>
+					</dd>
+				</dl>
+				<dl class="rows">
+					<dt class="title">
+						<i class="require">필수항목</i>
+						제목
+					</dt>
+					<dd class="form">
+						<div class="form_group maxlength">
+							<input type="text" class="form_control" placeholder="">
+							<span class="maxlength"><i>0</i>/25</span>
+						</div>
+					</dd>
+				</dl>
+				<dl class="rows check_group">
+					<dt class="title">
+						<i class="require">필수항목</i>
+						지점 / 센터 편의시설
+					</dt>
+					<dd class="form">
+						<div class="form_inline">
+							<div class="checkbox">
+								<input type="checkbox" id="checkID386">
+								<label for="checkID386" class="checkbox_label">Wi-Fi</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkID390">
+								<label for="checkID390" class="checkbox_label">CCTV</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkID394">
+								<label for="checkID394" class="checkbox_label">남녀화장실분리</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkID398">
+								<label for="checkID398" class="checkbox_label">셔틀버스</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkID402">
+								<label for="checkID402" class="checkbox_label">사물함</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkID406">
+								<label for="checkID406" class="checkbox_label">공기청정기</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkID410">
+								<label for="checkID410" class="checkbox_label">정수기</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkID414">
+								<label for="checkID414" class="checkbox_label">엘리베이터</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkID418">
+								<label for="checkID418" class="checkbox_label">주차</label>
+							</div>
+						</div>
+					</dd>
+				</dl>
+				<dl class="rows check_group">
+					<dt class="title">
+						<i class="require">필수항목</i>
+						학습관련시설
+					</dt>
+					<dd class="form">
+						<div class="form_inline">
+							<div class="checkbox">
+								<input type="checkbox" id="checkID432">
+								<label for="checkID432" class="checkbox_label">출결알림</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkID436">
+								<label for="checkID436" class="checkbox_label">듣기평가시설</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkID440">
+								<label for="checkID440" class="checkbox_label">자습공부방</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkID444">
+								<label for="checkID444" class="checkbox_label">특강운영</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkID448">
+								<label for="checkID448" class="checkbox_label">경시대회지원</label>
+							</div>
+
+						</div>
+					</dd>
+				</dl>
+				<dl class="rows in_box">
+					<dt class="title">
+						<i class="require">필수항목</i>
+						이미지 등록 <br class="pc_only">(최대 5개)
+					</dt>
+					<dd class="form">
+						<div class="custom_form add_image wide">
+							<div class="images">
+								<span class="group del">
+									<img src="/static/di/images/common/@thumb11.jpg" alt="">
+									<span class="delete">삭제</span>
+								</span>
+								<div class="form_group">
+									<input type="text" class="form_control" title="" placeholder="이미지 타이틀 명">
+								</div>
+							</div>
+							<div class="images">
+								<span class="group">
+									<img src="/static/di/images/common/@thumb11.jpg" alt="">
+									<span class="delete">삭제</span>
+								</span>
+								<div class="form_group">
+									<input type="text" class="form_control" title="" placeholder="이미지 타이틀 명">
+								</div>
+							</div>
+							<div class="file_add">
+								<span class="group">
+									<input type="file" id="add_file681">
+									<label for="add_file681"><span>파일선택</span></label>
+								</span>
+								<div class="form_group">
+									<input type="text" class="form_control" title="" placeholder="이미지 타이틀 명">
+								</div>
+							</div>
+							<div class="file_add">
+								<span class="group">
+									<input type="file" id="add_file682">
+								<label for="add_file682"><span>파일선택</span></label>
+								</span>
+								<div class="form_group">
+									<input type="text" class="form_control" title="" placeholder="이미지 타이틀 명">
+								</div>
+							</div>
+							<div class="file_add">
+								<span class="group">
+									<input type="file" id="add_file683">
+									<label for="add_file683"><span>파일선택</span></label>
+								</span>
+								<div class="form_group">
+									<input type="text" class="form_control" title="" placeholder="이미지 타이틀 명">
+								</div>
+							</div>
+						</div>
+					</dd>
+				</dl>
+				<dl class="rows in_box">
+					<dt class="title">
+						<i class="require">필수항목</i>
+						이미지 등록 <br class="pc_only">(최대 5개)
+					</dt>
+					<dd class="form">
+						<div class="custom_form add_image">
+							<div class="images">
+								<span class="group del">
+									<img src="/static/di/images/common/@thumb11.jpg" alt="">
+									<span class="delete">삭제</span>
+								</span>
+							</div>
+							<div class="images">
+								<span class="group">
+									<img src="/static/di/images/common/@thumb11.jpg" alt="">
+								</span>
+							</div>
+							<div class="file_add">
+								<span class="group">
+									<input type="file" id="add_file68">
+									<label for="add_file68"><span>파일선택</span></label>
+								</span>
+							</div>
+							<div class="file_add">
+								<span class="group">
+									<input type="file" id="add_file681">
+									<label for="add_file681"><span>파일선택</span></label>
+								</span>
+							</div>
+							<div class="file_add">
+								<span class="group">
+									<input type="file" id="add_file682">
+								<label for="add_file682"><span>파일선택</span></label>
+								</span>
+							</div>
+							<div class="file_add">
+								<span class="group">
+									<input type="file" id="add_file683">
+									<label for="add_file683"><span>파일선택</span></label>
+								</span>
+							</div>
+						</div>
+					</dd>
+				</dl>
+				<dl class="rows in_box">
+					<dt class="title">
+						<i class="require">필수항목</i>
+						계열별 교사 수 <br class="pc_only">(최대 5개)
+					</dt>
+					<dd class="form">
+						<div class="multi_input">
+							<div class="inner">
+								<div class="group">
+									<div class="form_group">
+										<input type="text" class="form_control">
+									</div>
+									<div class="form_group add_symbol">
+										<input type="text" class="form_control" placeholder="교사 계열 명">
+										<button type="button" class="minus"><span>추가</span></button>
+									</div>
+								</div>
+								<div class="group">
+									<div class="form_group">
+										<input type="text" class="form_control">
+									</div>
+									<div class="form_group add_symbol">
+										<input type="text" class="form_control" placeholder="교사 계열 명">
+										<button type="button" class="minus"><span>제거</span></button>
+									</div>
+								</div>
+								<div class="group">
+									<div class="form_group">
+										<input type="text" class="form_control">
+									</div>
+									<div class="form_group add_symbol">
+										<input type="text" class="form_control" placeholder="교사 계열 명">
+										<button type="button" class="minus"><span>제거</span></button>
+									</div>
+								</div>
+								<div class="group">
+									<div class="form_group">
+										<input type="text" class="form_control">
+									</div>
+									<div class="form_group add_symbol">
+										<input type="text" class="form_control" placeholder="교사 계열 명">
+										<button type="button" class="minus"><span>제거</span></button>
+									</div>
+								</div>
+								<div class="group">
+									<div class="form_group">
+										<input type="text" class="form_control">
+									</div>
+									<div class="form_group add_symbol">
+										<input type="text" class="form_control" placeholder="교사 계열 명">
+										<button type="button" class="minus"><span>제거</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!-- <pre class="brush: xml;" data-hilight="code"></pre> -->
+	</div>
+	<hr class="line">
+
+	<h2 class="h2_guide">페이징</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="paging">
+				<ul>
+					<li class="prev disabled"><a href="#"><span class="sr_only">이전</span></a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li class="active"><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li class="next"><a href="#"><span class="sr_only">다음</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- <pre class="brush: xml;" data-hilight="code"></pre> -->
+	</div>
+	<hr class="line">
+
+	<h2 class="h2_guide">페이지 공통 하단 버튼</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="sub_contnet">
+				<div class="btns_wrap">
+					<button type="button" class="btn btn_default btn_xlg"><span>취소</span></button>
+					<button type="button" class="btn btn_primary btn_xlg"><span>등록</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- <pre class="brush: xml;" data-hilight="code"></pre> -->
+	</div>
+	<hr class="line">
+
+	<h2 class="h2_guide">박스</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<!-- code.... -->
+		</div>
+		<!-- <pre class="brush: xml;" data-hilight="code"></pre> -->
+	</div>
+	<hr class="line">
+
+</div>
+<!--#include virtual="bottom.html" -->

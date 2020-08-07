@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 스크립트가이드</title>
+	<link rel="SHORTCUT ICON" href="/coding_list/images/severance.ico"/>
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/shCoreDefault.css">
+<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">layout</h1>
+	<div class="d_desc">
+		<p class="decs">공통 부분 전반적인 기능 모음(Header, Footer 등 공통 UI) -- 화면 로딩 후 자동 실행</p>
+	</div>
+	<h2 class="h2_guide">options</h2>
+	<div class="d_desc">
+		<p class="decs">없음</p>
+	</div>
+
+	<h2 class="h2_guide">Method</h2>
+	<div class="d_desc">
+		<ul>
+			<li>$('body').LayoutAction('initLibray'); -- 비동기로 추가된 DOM에 대한 플러그인 재 호출</li>
+			<li>$('body').LayoutAction('footerFixed'); -- Footer Fixed Check</li>
+			<li>$('body').LayoutAction('commonBanner'); -- PC, Tablet 상단 띠베너 컨트롤 메서드(띠베너 관련태그 삽입 후 호출)</li>
+			<li>$('body').LayoutAction('setFooterPadding'); -- 모바일 화면 하단에 스티킹되는 컨텐츠 삽입 후 여백 조정 메서드(푸터 부분에 스티킹 되는 컨텐츠 삽입 후 호출)</li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+</div>
+</body>
+</html>

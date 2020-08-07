@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 메시지 가이드</title>
+	<link rel="SHORTCUT ICON" href="/coding_list/images/severance.ico"/>
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/shCoreDefault.css">
+
+<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+<style>
+.dscBox.bg-color{background:#f9f9f9}
+.modal{display:block;opacity: 1;position: static;}
+</style>
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">알림 / 확인 메시지</h1>
+	<dl class="notice">
+		<dt>기본사항</dt>
+		<dd><span class="bold">- 모달 크기 옵션 (※ .modal-dialog에 추가 클래스 적용.)</span>
+			<ol>
+				<li>.modal-sm : 300px</li>
+				<li>.modal-md : 600px</li>
+				<li>.modal-lg : 900px</li>
+				<li>.modal-wide : 1280px</li>
+				<li>.modal-480 : 480px</li>
+				<li>.modal-860 : 860px</li>
+			</ol>
+		</dd>
+		<dd class="bold">- 모달에 타이틀이 없는 경우 .modal에 alert-type 클래스 추가 </dd>
+	</dl>
+	
+	<h2 class="h2_guide">정보알림 - 닫기버튼 없음</h2>
+	<div class="dscBox bg-color">
+		<div class="modal">
+			<div class="modal-dialog modal-480">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">알림</h4>
+					</div>
+					<div class="modal-body">
+						<p>알림 메시지 내용 영역</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">닫기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+<pre class="brush: xml;">
+<div class="modal">
+	<div class="modal-dialog modal-480">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title"></h4>
+			</div>
+			<div class="modal-body">
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+</pre>
+	</div>
+
+	<h2 class="h2_guide">확인 - 닫기버튼 있음</h2>
+	<div class="dscBox bg-color">
+		<div class="modal">
+			<div class="modal-dialog modal-480">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">알림</h4>
+					</div>
+					<div class="modal-body">
+						<p>등록하시겠습니까?</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">등록</button>
+						<button type="button" class="btn btn-success" data-dismiss="modal">취소</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<pre class="brush: xml;">
+<div class="modal">
+	<div class="modal-dialog modal-480">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title"></h4>
+			</div>
+			<div class="modal-body">
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary">등록</button>
+				<button type="button" class="btn btn-success" data-dismiss="modal">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+</pre>
+	</div>
+	
+	<h2 class="h2_guide">일시</h2>
+	<div class="dscBox">
+		<div class="modal alert-type type3">
+			<div class="modal-dialog modal-480">
+				<div class="modal-content">
+					<div class="modal-body">
+						 <div class="box-line">
+							<div class="scroll-conts" data-modules="customScroll" style="max-height:200px;">
+								<p>팝업의 세로값을 고정으로 사용하고내용이 길어질 경우 팝업 내용 부분에 스크롤이 생깁니다. <br>팝업의 세로값을 고정으로 사용하고<br>내용이 길어질 경우 팝업 내용 부분에 스크롤이 생깁니다. 팝업의 세로값을 고정으로 사용하고<br>내용이 길어질 경우 팝업 내용 부분에 스크롤이 생깁니다. 팝업의 세로값을 고정으로 사용하고<br>내용이 길어질 경우 팝업 내용 부분에 스크롤이 생깁니다.</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="btns-close-today">
+							<span class="checkbox default">
+								<input id="ck1" type="checkbox">
+								<label for="ck1">오늘 하루 열지 않음</label>
+							</span>
+							<button type="button" class="btn btn-success" data-dismiss="modal">닫기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<pre class="brush: xml;">
+<div class="modal alert-type type3">
+	<div class="modal-dialog modal-480">
+		<div class="modal-content">
+			<div class="modal-body">
+				 <div class="box-line">
+					<div class="scroll-conts" data-modules="customScroll" style="height:200px;">
+						
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="btns-close-today">
+					<span class="checkbox default">
+						<input id="ck1" type="checkbox">
+						<label for="ck1">오늘 하루 열지 않음</label>
+					</span>
+					<button type="button" class="btn btn-success" data-dismiss="modal">닫기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</pre>
+	</div>
+
+	<h2 class="h2_guide">Alert</h2>
+	<div class="dscBox">
+		<div class="modal alert-type">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-body">
+						<p>회원전용 서비스입니다.<br>로그인후 이용해 주세요.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success" data-dismiss="modal">닫기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<pre class="brush: xml;">
+<div class="modal alert-type">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success" data-dismiss="modal">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+</pre>
+	</div>
+
+</div>
+</body>
+</html>

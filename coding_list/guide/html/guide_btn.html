@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 버튼 & 레이블 가이드</title>
+	<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">버튼 & 레이블</h1>
+	<h2 class="h2_guide">버튼</h2>
+	<div class="dscBox">
+		<dl class="notice">
+			<dt>버튼 작성 규칙 : 기본, 색상, 사이즈, 기타 추가 클래스의 순서대로 기입</dt>
+			<dd>
+				<ol>
+					<li>기본  class : btn(font size : 16, color : #333, border : 1px)</li>
+					<li>etc : 기타 추가 클래스 기입</li>
+					<li>
+						아이콘이 있는 경우 : &lt;span class="ico (아이콘별 class)"&gt;&lt;/span&gt;<br> 아이콘 텍스트 사이 간격 12px, btn_sm(10px)
+					</li>
+				</ol>
+			</dd>
+		</dl>
+	</div>
+	<div class="dscBox">
+		<dl class="notice">
+			<dt>color</dt>
+			<dd>라인 : btn_default(라인, line color:#666)</dd>
+			<dd>배경 : btn_black( background: #000), btn_primary( background:#333), btn_lightgray( background:#666), btn_white( background:#fff), btn_ctype1( background:#008fd4)</dd>
+		</dl>
+		<div class="code_in" style="background:#f5f5f5;padding:10px;">
+			<button type="button" class="btn btn_default btn_lg"><span>버튼</span></button>
+			<button type="button" class="btn btn_black btn_lg"><span>버튼</span></button>
+			<button type="button" class="btn btn_primary btn_lg"><span>버튼</span></button>
+			<button type="button" class="btn btn_lightgray btn_lg"><span>버튼</span></button>
+			<button type="button" class="btn btn_white btn_lg"><span>버튼</span></button>
+			<button type="button" class="btn btn_ctype1 btn_lg"><span>버튼</span></button>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<div class="dscBox">
+		<dl class="notice">
+			<dt>size(height)</dt>
+			<dd>btn_sm(30px), btn_md(40px), btn_mdl(44px), btn_lg(48px), btn_xlg(56px), btn_xxlg(72px)</dd>
+			<dd class="bold">※ 서식과 함께 쓰이는 버튼 : btn_form(43px)</dd>
+		</dl>
+		<div class="code_in" style="background:#f5f5f5;padding:10px;">
+			<button type="button" class="btn btn_primary btn_sm"><span>버튼</span></button>
+			<button type="button" class="btn btn_primary btn_md"><span>버튼</span></button>
+			<button type="button" class="btn btn_primary btn_mdl"><span>버튼</span></button>
+			<button type="button" class="btn btn_primary btn_lg"><span>버튼</span></button>
+			<button type="button" class="btn btn_primary btn_xlg"><span>버튼</span></button>
+			<button type="button" class="btn btn_primary btn_xxlg"><span>버튼</span></button>
+			<br>
+			<!-- 서식과 함께 쓰이는 버튼 -->
+			<button type="button" class="btn btn_lightgray btn_form"><span>버튼</span></button>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+
+	<h2 class="h2_guide">WSG 버튼 모음</h2>
+	<div class="dscBox">
+		<div class="code_in" style="background:#f5f5f5;padding:10px;">
+			<button type="button" class="btn btn_black btn_sm"><span>당첨자발표</span><span class="ico ico_arrow"></span></button>
+			<br>
+			<br>
+			<button type="button" class="btn btn_default btn_md"><span>초기화</span></button>
+			<button type="button" class="btn btn_primary btn_md"><span>결과보기</span></button>
+			<button type="button" class="btn btn_default btn_md"><span>닫기</span></button>
+			<button type="button" class="btn btn_black btn_md"><span>등록</span></button>
+			<br>
+			<br>
+			<button type="button" class="btn btn_white btn_mdl"><span>브랜드 홈</span><span class="ico ico_home"></span></button>
+			<button type="button" class="btn btn_white btn_mdl"><span>웹사이트</span><span class="ico ico_arrow"></span></button>
+			<button type="button" class="btn btn_ctype1 btn_mdl"><span>등록</span><span class="ico ico_arrow"></span></button>
+			<br>
+			<br>
+			<button type="button" class="btn btn_primary btn_lg"><span>게시글 등록</span><span class="ico ico_bbs_edit"></span></button>
+			<button type="button" class="btn btn_primary btn_lg"><span>목록으로</span><span class="ico ico_bbs_list"></span></button>
+			<br>
+			<br>
+			<button type="button" class="btn btn_default btn_xlg"><span>함께 상담요청하기</span></button>
+			<button type="button" class="btn btn_black btn_xlg"><span>로그인</span></button>
+			<button type="button" class="btn btn_default btn_xlg"><span>취소</span></button>
+			<button type="button" class="btn btn_primary btn_xlg"><span>등록</span></button>
+			<br><br>
+			<button type="button" class="btn btn_primary btn_xxlg"><span>상담요청서 작성하기</span><span class="ico ico_counsel_edit"></span></button>
+			<br><br>
+			<!-- 모바일에서 텍스트 노출 : span class [txts] -->
+			<div class="fixed_btns">
+				<button class="btn"><span class="ico type1"></span><span>전화상담</span></button>
+				<button class="btn"><span class="ico type2"></span><span>상담톡</span></button>
+				<button class="btn"><span class="ico type4"></span><span>담아두기</span></button>
+				<button class="btn"><span class="ico type3"></span><span class="txts">상담요청</span></button>
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+
+	<h2 class="h2_guide">더보기</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<button class="btn btn_more"><span>더보기</span></button>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+	<h2 class="h2_guide">레이블</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="labels">
+				<a href="" class="label active">전체</a>
+				<a href="" class="label">#고민있어요</a>
+				<a href="" class="label">#공부의참견</a>
+				<a href="" class="label">#우리선생님최고</a>
+				<a href="" class="label">#자료실</a>
+			</div>
+			<div class="labels size_sm">
+				<span class="label">시작</span>
+				<span class="label active">종료</span>
+				<span class="label type01">차이홍 중국어</span>
+				<span class="label type02">눈높이</span>
+				<span class="label type03">솔루니</span>
+				<span class="label etc">기타</span> <!-- 눈높이, 차이홍, 솔루니 제외 -->
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+	<h2 class="h2_guide">키워드</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="keywords">
+				<span class="keyword">초등학생<button type="button" class="delete"><span>삭제</span></button></span>
+				<span class="keyword">초등학생<button type="button" class="delete"><span>삭제</span></button></span>
+				<span class="keyword">초등학생<button type="button" class="delete"><span>삭제</span></button></span>
+				<span class="keyword">초등학생<button type="button" class="delete"><span>삭제</span></button></span>
+				<button type="button" class="add_keyword"><span><i class="plus"></i>추가</span></button>
+			</div>
+			<span class="keyword">초등학생<button type="button" class="delete"><span>삭제</span></button></span>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+	<!-- <h2 class="h2_guide">텍스트 + 아이콘</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<button class="btn_add"><span>추가하기</span></button>
+			<button class="btn_add" disabled="disabled"><span>추가하기</span></button>
+			<button class="btn_sample"><span>샘플보기</span></button>
+			<button class="btn_regist"><span>수업등록</span></button>
+			<button class="btn_date"><span class="sr_only">날짜</span></button>
+			<button class="btn_time"><span class="sr_only">시간</span></button>
+			<button class="btn_search"><span class="sr_only">검색</span></button>
+			<button class="btn_delete"><span class="sr_only">삭제</span></button>
+			<button class="btn_cancel"><span class="sr_only">삭제</span></button>
+			<button class="btn_img_delete"><span class="sr_only">사진 삭제</span></button>
+			<button class="btn_img_modify"><span class="sr_only">사진 수정</span></button>
+			<button class="btn_mode"><span class="sr_only">모드 변경</span></button>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+
+	<h2 class="h2_guide">키워드 추가</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="part_list">
+				<div class="lists">
+					<span class="item"><i class="txts">리스트1</i><a href="#" class="btn_cancel"><i class="sr_only">삭제</i></a></span>
+					<span class="item"><i class="txts">리스트2</i><a href="#" class="btn_cancel"><i class="sr_only">삭제</i></a></span>
+				</div>
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line"> -->
+
+
+
+<!--#include virtual="bottom.html" -->

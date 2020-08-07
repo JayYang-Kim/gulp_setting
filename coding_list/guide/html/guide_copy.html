@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 기본 가이드</title>
+
+	<link rel="SHORTCUT ICON" href="/coding_list/images/severance.ico"/>
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/shCoreDefault.css">
+
+<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+<style>
+	*{line-height: 1.6;letter-spacing: .2px !important;}
+	a{text-decoration: underline;}
+	.lstDsc{
+		margin-bottom: 120px;
+	}
+</style>
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">URL 복사</h1>
+	<div id="copyEditor" placeholer="" contenteditable="true"></div>
+	<button type="button" class="btn btn_primary btn_xxlg" id="copyUrl"><span>복사</span></button>
+</div>
+<script>
+	+function(core, $){
+		var btn = $('#copyUrl');
+		btn.on('click', function(){
+			var editor = $('#copyEditor')[0].innerHTML;
+			if(editor.trim() === ""){
+				$('#copyEditor').html('먼저 붙여넣을 텍스트를 입력해주세요.')
+				setTimeout(function(){
+					$('#copyEditor').html('')
+				}, 2000)				
+			}else{
+				copyToClipboard(editor)
+				$('#copyEditor').html('복사되었습니다.')
+				setTimeout(function(){
+					$('#copyEditor').html('')
+				}, 2000)
+			}
+		})
+		function copyToClipboard(val) {
+			var t = document.createElement("textarea");
+			document.body.appendChild(t);
+			t.value = val.replaceAll("http://localhost/","http://172.17.17.73:8080/");
+			t.select();
+			document.execCommand('copy');
+			document.body.removeChild(t);
+		}
+		String.prototype.replaceAll = function(org, dest) {
+			return this.split(org).join(dest);
+		}
+	}(window[LIB_NAME], jQuery)
+</script>
+</body>
+</html>
+
+

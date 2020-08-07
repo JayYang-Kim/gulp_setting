@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 입력서식 가이드</title>
+	<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+</head>
+<body>
+
+	<div class="btn_section">
+		<button type="button" class="btn_close"><span class="sr_only">닫기</span></button>
+		<button type="button" class="btn_close left"><span>닫기</span></button>
+		<button type="button" class="btn_close right"><span>닫기</span></button>
+		<button type="button" class="btn_plus"><span class="sr_only">추가</span></button>
+		<button type="button" class="btn_plus left"><span>추가</span></button>
+		<button type="button" class="btn_plus right"><span>추가</span></button>
+		<button type="button" class="btn_arrow_up"><span class="sr_only">열림</span></button>
+		<button type="button" class="btn_arrow_down"><span class="sr_only">닫힘</span></button>
+		<button type="button" class="btn_arrow_left"><span class="sr_only">이전</span></button>
+		<button type="button" class="btn_arrow_right"><span class="sr_only">다음</span></button>
+	</div>
+	<div class="btn_section">
+		<span class="ico_plus"></span>
+		<span class="ico_plus2"></span>
+		<span class="ico_close"></span>
+		<span class="ico_close2"></span>
+		<span class="ico_arrow_up"></span>
+		<span class="ico_arrow_down"></span>
+		<span class="ico_arrow_left"></span>
+		<span class="ico_arrow_right"></span>
+		<span class="ico_linearrow_up"></span>
+		<span class="ico_linearrow_down"></span>
+		<span class="ico_linearrow_left"></span>
+		<span class="ico_linearrow_right"></span>
+		<span class="ico_longarrow_up"></span>
+		<span class="ico_longarrow_down"></span>
+		<span class="ico_longarrow_left"></span>
+		<span class="ico_longarrow_right"></span>
+	</div>
+	
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">아이콘 & 태그</h1>
+
+	<h2 class="h2_guide">정적 아이콘 모음</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div>
+				<span class="star_score">
+					<i class="ic">별점 5.0 기준</i><em class="txt">4.8</em>
+				</span>
+				<span class="view_score">
+					<i class="ic">페이지 뷰</i><em class="txt">220</em>
+				</span>
+				<div style="background: #aaa;display: inline-block;">
+					<a href="" class="ico digital_card">디지털 명함</a>
+					<a href="" class="ico digital_card type2">디지털 명함</a>
+					<a href="" class="ico digital_card type3">디지털 명함</a>
+				</div>
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+	<h2 class="h2_guide">찜 기능</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div>
+				<a href="" class="ico_like" data-modules="classesToggle" data-options='{
+					"classLists": [
+						"active"
+					]
+				}'>좋아요 클릭<span class="num">9,999</span></a>
+				<a href="" class="ico_zzim"><span>찜</span></a>
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+	<h2 class="h2_guide">메뉴 더보기</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="more_menu" style="margin-left:300px">
+				<div class="ui_dropdown">
+					<div class="dropdown">
+						<a id="dropMenu" href="#" data-toggle="dropdown" aria-expanded="false" class="more_ico"><span>메뉴 더보기</span></a>
+						<ul class="dropdown-menu menu_lists" role="menu" aria-labelledby="dropMenu">
+							<li><a href="#">수정</a></li>
+							<li><a href="#">삭제</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+
+	<div class="dscBox">
+		<div class="code_in">
+			<div>
+				<!-- 활성화 active, 별점 채우기 fix -->
+				<span class="star_rating_box">
+					<span class="star left active">0.5</span>
+					<span class="star right active">1.0</span>
+					<span class="star left">1.5</span>
+					<span class="star right">2.0</span>
+					<span class="star left">2.5</span>
+					<span class="star right">3.0</span>
+					<span class="star left">3.5</span>
+					<span class="star right">4.0</span>
+					<span class="star left">4.5</span>
+					<span class="star right">5.0</span>
+					<span class="num">1.0</span>
+					<span class="maximum"><i>/</i> 5</span>
+				</span>
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+
+	<div class="dscBox">
+		<div class="code_in">
+			<div>
+				<!-- 활성화 active, 별점 채우기 fix -->
+				<span class="star_rating_box" data-modules="starRating">
+					<a href="#" class="star left active">0.5</a>
+					<a href="#" class="star right active fix">1.0</a>
+					<a href="#" class="star left">1.5</a>
+					<a href="#" class="star right">2.0</a>
+					<a href="#" class="star left">2.5</a>
+					<a href="#" class="star right">3.0</a>
+					<a href="#" class="star left">3.5</a>
+					<a href="#" class="star right">4.0</a>
+					<a href="#" class="star left">4.5</a>
+					<a href="#" class="star right">5.0</a>
+					<!-- <span class="num">1.0</span>
+					<span class="maximum"><i>/</i> 5</span> -->
+				</span>
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+
+<!--#include virtual="bottom.html" -->

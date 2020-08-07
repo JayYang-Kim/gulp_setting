@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 입력서식 가이드</title>
+	<!-- <script src="http://paperjs.org/assets/js/paper.js"></script> -->
+	<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+	
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">서식</h1>
+	<h2 class="h2_guide">기본 input : text, password, tel ..<small>기본상태, 설명글, placeholder, 비활성화, 읽기전용</small></h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<!-- default  -->
+			<div class="form_group">
+				<input type="text" class="form_control" placeholder="">
+			</div>
+
+			<p style="margin-top:30px">maxlength</p>
+			<div class="form_group maxlength">
+				<input type="text" class="form_control" placeholder="">
+				<span class="maxlength"><i>0</i>/500</span>
+			</div>
+
+			<p style="margin-top:30px">disabled</p>
+			<!-- disabled -->
+			<div class="form_group">
+				<input type="text" class="form_control" disabled="disabled" placeholder="">
+			</div>
+
+			<p style="margin-top:30px">readonly</p>
+			<!-- readonly  -->
+			<div class="form_group">
+				<input type="text" class="form_control" readonly="readonly" placeholder="">
+			</div>
+
+			<p style="margin-top:30px">inline form</p>
+			<div class="form_inline">
+				<div class="form_group">
+					<input type="text" class="form_control" placeholder="">
+				</div>
+				<div class="form_group">
+					<input type="text" class="form_control" placeholder="">
+				</div>
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+
+	<h2 class="h2_guide">서식 유효성 검사 <small>피드백과 설명글이 함께 올 경우 피드백을 우선으로 배치</small></h2>
+	<div class="dscBox">
+		<div class="code_in">
+
+			<!-- success  -->
+			<div class="form_group">
+				<input type="text" class="form_control bottom" placeholder="">
+				<p class="form_caption">설명글을 나타낼 수 있습니다.</p>
+			</div>
+
+			<!-- success  -->
+			<div class="form_group success">
+				<input type="text" class="form_control bottom" placeholder="">
+				<p class="form_feedback">성공메시지</p>
+				<p class="form_caption">설명글을 나타낼 수 있습니다.</p>
+			</div>
+
+			<!-- error  -->
+			<div class="form_group error">
+				<input type="text" class="form_control bottom" placeholder="">
+				<p class="form_feedback">오류메시지</p>
+			</div>
+
+			<!-- success  -->
+			<div class="form_group success">
+				<input type="password" class="form_control bottom" placeholder="비밀번호 입력">
+				<div class="pw_feedback">
+					<i class="bg"></i><i class="bg"></i><i class="bg"></i>
+					<span class="txts">안전</span>
+				</div>
+			</div>
+
+			<!-- warn  -->
+			<div class="form_group warn">
+				<input type="password" class="form_control bottom" placeholder="비밀번호 입력">
+				<div class="pw_feedback">
+					<i class="bg"></i><i class="bg"></i><i class="bg"></i>
+					<span class="txts">보통</span>
+				</div>
+			</div>
+
+			<!-- error  -->
+			<div class="form_group error">
+				<input type="password" class="form_control bottom" placeholder="비밀번호 입력">
+				<div class="pw_feedback">
+					<i class="bg"></i><i class="bg"></i><i class="bg"></i>
+					<span class="txts">취약</span>
+				</div>
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+
+	<!-- <h2 class="h2_guide">레이블 + input</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="form_group">
+				<label for="" class="form_label">서식연결텍스트</label>
+				<input type="text" id="" placeholder="서식" class="form_control">
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line"> -->
+	
+	<!-- <h2 class="h2_guide">datepicker</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="form_box">
+				<div class="inner">
+					<div class="input_group">
+						<input type="text" class="form_control">
+					</div>
+					<div class="btn_box">
+						<button class="btn"><span>달력</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="form_box">
+				<div class="inner">
+					<div class="input_group">
+						<input type="text" class="form_control">
+					</div>
+					<div class="btn_box">
+						<button class="btn"><span>달력</span></button>
+					</div>
+					<span class="date_period_divider">-</span>
+					<div class="input_group">
+						<input type="text" class="form_control">
+					</div>
+					<div class="btn_box">
+						<button class="btn"><span>달력</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line"> -->
+
+	<h2 class="h2_guide">checkbox</h2>
+	<div class="dscBox form_inline">
+		<div class="code_in">
+			<div class="checkbox">
+				<input type="checkbox" id="checkbox_primary">
+				<label for="checkbox_primary" class="checkbox_label">기본</label>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" id="checkbox_primary2" checked="checked">
+				<label for="checkbox_primary2" class="checkbox_label">체크</label>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" id="checkbox_primary3" disabled="disabled">
+				<label for="checkbox_primary3" class="checkbox_label">비활성화</label>
+			</div>
+
+			<div class="checkbox single">
+				<input type="checkbox" id="checkbox_primary4">
+				<label for="checkbox_primary4" class="checkbox_label">단독으로 쓰이는 체크박스</label>
+			</div>
+
+			<div class="checkbox round">
+				<input type="checkbox" id="checkbox_primary5">
+				<label for="checkbox_primary5" class="checkbox_label">라운드 체크박스</label>
+			</div>
+		</div>
+		<pre class="brush: xml;"  data-hilight="code"></pre>
+	</div>
+
+	<h2 class="h2_guide">radio</h2>
+	<div class="dscBox form_inline">
+		<div class="code_in">
+			<div class="radio">
+				<input type="radio" id="radio_primary1">
+				<label for="radio_primary1" class="radio_label">기본</label>
+			</div>
+			<div class="radio">
+				<input type="radio" id="radio_primary2" checked="checked">
+				<label for="radio_primary2" class="radio_label">체크</label>
+			</div>
+			<div class="radio">
+				<input type="radio" id="radio_primary3" disabled="disabled">
+				<label for="radio_primary3" class="radio_label">비활성화</label>
+			</div>
+		</div>
+		<pre class="brush: xml;"  data-hilight="code"></pre>
+	</div>
+
+	<h2 class="h2_guide">custom checkbox, radio</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<!-- 
+				radio, checkbox 사용 가능
+			-->
+			<div class="custom_form">
+				<div class="item">
+					<input type="checkbox" id="checkbox_custom1" checked="checked">
+					<label for="checkbox_custom1" class="custom_label">option1</label>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="checkbox_custom2">
+					<label for="checkbox_custom2" class="custom_label">option2</label>
+				</div>
+			</div>
+		</div>
+		<pre class="brush: xml;"  data-hilight="code"></pre>
+	</div>
+
+	<h2 class="h2_guide">select</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="form_group">
+				<select class="form_control">
+					<option selected="selected">전체 라인</option>
+				</select>
+			</div>
+			<div class="form_group success">
+				<select required="" class="form_control">
+					<option value="" elected="selected">성공</option>
+				</select>
+			</div>
+			<div class="form_group warn">
+				<select required="" class="form_control">
+					<option value="" elected="selected">주의</option>
+				</select>
+			</div>
+			<div class="form_group error">
+				<select required="" class="form_control">
+					<option value="" elected="selected">오류</option>
+				</select>
+			</div>
+		</div>
+		<pre class="brush: xml;"  data-hilight="code"></pre>
+	</div>
+
+	<h2 class="h2_guide">textarea</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="form_group maxlength" contenteditable="true" style="height: 100px;text-align: left;">
+				<!-- <textarea name="textarea" title="" class="form_control" >textarea</textarea> -->
+				<!-- <span class="maxlength"><i>0</i>/500</span> -->
+			</div>
+			<div class="form_group maxlength disabled">
+				<textarea name="textarea" title="" class="form_control" disabled="disabled">textarea disabled</textarea>	
+				<span class="maxlength"><i>0</i>/500</span>
+			</div>
+			<div class="form_group maxlength disabled">
+				<textarea name="textarea" title="" class="form_control" readonly="readonly">textarea readonly</textarea>	
+				<span class="maxlength"><i>0</i>/500</span>
+			</div>	
+		</div>
+		<pre class="brush: xml;"  data-hilight="code"></pre>
+	</div>
+
+	<h2 class="h2_guide">서식 모음</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<p style="margin-top:30px">생년월일</p>
+			<!-- 생년월일 -->
+			<!-- 
+				유효성체크
+				성공, 완료 :  [success] 클래스 추가
+				에러 :  [error] 클래스 추가
+			-->
+			 <div class="custom_form disabled">
+				<div class="inner fixed">
+					<div class="cf_group">
+						<select class="form_control" title="생년 선택">
+							<option selected="selected">생년</option>
+						</select>
+					</div>
+					<div class="cf_group">
+						<select class="form_control" title="월 선택">
+							<option selected="selected">월</option>
+						</select>
+					</div>
+					<div class="cf_group">
+						<select class="form_control" title="일 선택">
+							<option selected="selected">일</option>
+						</select>
+					</div>
+				</div>
+				<p class="form_feedback">유효성체크 메시지</p>
+			</div>
+
+			<!-- 이메일주소 -->
+			<!-- 
+				유효성체크
+				성공, 완료 :  [success] 클래스 추가
+				에러 :  [error] 클래스 추가
+			-->
+			<p style="margin-top:30px">이메일 주소</p>
+			<div class="custom_form email">
+				<div class="inner fixed">
+					<div class="cf_group">
+						<input type="text" class="form_control" title="이메일 아이디 입력">
+					</div>
+					<div class="cf_group">
+						<select class="form_control" title="이메일 도메인 선택">
+							<option selected="selected">@naver.com</option>
+						</select>
+					</div>
+				</div>
+				<p class="form_feedback">유효성체크 메시지</p>
+			</div>
+
+
+
+			<!-- 휴대폰번호 -->
+			<!-- 
+				유효성체크
+				성공, 완료 :  [success] 클래스 추가
+				에러 :  [error] 클래스 추가
+			-->
+			<p style="margin-top:30px">휴대폰번호</p>
+			<div class="custom_form phon">
+				<div class="inner fixed">
+					<div class="cf_group">
+						<input type="tel" class="form_control" title="번호 첫번째 입력">
+					</div>
+					<div class="cf_group">
+						<input type="tel" class="form_control" title="번호 앞 3자리 또는 4자리 입력">
+					</div>
+					<div class="cf_group">
+						<input type="tel" class="form_control" title="번호 뒤 4자리 입력">
+					</div>
+				</div>
+				<p class="form_feedback">유효성체크 메시지</p>
+			</div>
+			
+			<!-- 
+				유효성체크
+				성공, 완료 :  [success] 클래스 추가
+				에러 :  [error] 클래스 추가
+			-->
+			<p style="margin-top:30px">전화번호</p>
+			<div class="custom_form tel">
+				<div class="inner fixed">
+					<div class="cf_group">
+						<input type="tel" class="form_control bottom" title="번호 국번 입력">
+					</div>
+					<div class="cf_group">
+						<input type="tel" class="form_control bottom" title="번호 앞 3자리 또는 4자리 입력">
+					</div>
+					<div class="cf_group">
+						<input type="tel" class="form_control bottom" title="번호 뒤 4자리 입력">
+					</div>
+				</div>
+				<p class="form_feedback">유효성체크 메시지</p>
+			</div>
+			<!-- 주소 -->
+			<!-- 
+				유효성체크
+				성공, 완료 :  [success] 클래스 추가
+				에러 :  [error] 클래스 추가
+			-->
+			<p style="margin-top:30px">주소</p>
+			<div class="custom_form address">
+				<div class="inner addr1">
+					<div class="cf_group">
+						<input type="text" class="form_control" >
+					</div>
+					<div class="cf_group">
+						<button type="button" class="btn btn_lightgray btn_form"><span>우편번호</span></button>
+					</div>
+				</div>
+				<div class="inner addr2 fixed">
+					<div class="cf_group">
+						<input type="text" class="form_control">
+					</div>
+					<div class="cf_group">
+						<input type="text" class="form_control">
+					</div>
+				</div>
+			</div>
+
+			<!-- 인증번호 받기 -->
+			<!-- 
+				유효성체크
+				성공, 완료 :  [success] 클래스 추가
+				에러 :  [error] 클래스 추가
+			-->
+			<p style="margin-top:30px">인증번호 받기</p>
+			<div class="custom_form certify">
+				<div class="inner">
+					<div class="cf_group">
+						<input type="text" class="form_control bottom" placeholder="인증번호를  입력해주세요." maxlength="6">
+						<span class="time">3:00</span>
+					</div>
+					<div class="btn_box">
+						<button class="btn btn_gray"><span>인증번호 받기</span></button>
+					</div>
+					<div class="btn_box" style="display:none;">
+						<button class="btn"><span>인증번호 재요청</span></button>
+					</div>
+				</div>
+				<p class="form_feedback">유효성체크 메시지</p>
+			</div>
+
+			<p style="margin-top:30px">입력박스 + 검색버튼 + 직접입력</p>
+			<div class="custom_form check_btn">
+				<div class="inner">
+					<div class="cf_group">
+						<input type="text" class="form_control" placeholder="학원 명을 검색해 주세요">
+					</div>
+					<div class="btn_ico">
+						<button class="btn btn_search"><span>검색</span></button>
+					</div>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkID14190">
+					<label for="checkID14190" class="checkbox_label">직접등록</label>
+				</div>
+			</div>
+			<div class="form_group success">
+				<!-- 유효성체크 : success, warn, error -->
+				<input type="password" class="form_control bottom" placeholder="비밀번호 입력" title="비밀번호 입력">
+				<div class="pw_feedback">
+					<i class="bg"></i><i class="bg"></i><i class="bg"></i>
+					<span class="txts">안전</span>
+				</div>
+				<p class="form_feedback">유효성 체크</p>
+			</div>
+
+			<div class="custom_form">
+				<div class="inner fixed">
+					<div class="cf_group">
+						<select class="form_control" title="">
+							<option></option>
+						</select>
+					</div>
+					<div class="cf_group">
+						<select class="form_control" title="">
+							<option></option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<!-- 학력 -->
+			<!-- 
+				추가하기 기능 있는 경우 : custom_form education에  delete_in 클래스 추가
+			-->
+			<!-- 기본, 초등, 중등 -->
+			<div class="custom_form education">
+				<div class="inner fixed">
+					<div class="cf_group">
+						<select class="form_control">
+							<option value="" selected="selected">학교구분</option>
+							<option value="">초등학교</option>
+							<option value="">중학교</option>
+							<option value="">고등학교</option>
+							<option value="">대학(2,3년)</option>
+							<option value="">대학(4년)</option>
+							<option value="">대학원</option>
+						</select>
+					</div>
+					<div class="cf_group group_1 sch_school"><!-- 학교명 검색 활성화 class : active -->
+						<input type="text" class="form_control" placeholder="학교명" value="">
+						<div class="sch_keyword_wrap">
+							<div class="sch_keyword">
+								<div class="data">
+									<div class="no_data">
+										<p>일치하는 학교명이 없습니다.</p>
+										<p class="key_in_text">‘서울대학교 보건대학원’ 입력</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 고등 -->
+			<div class="custom_form education">
+				<div class="inner fixed">
+					<div class="cf_group">
+						<select class="form_control">
+							<option value="">학교구분</option>
+							<option value="">초등학교</option>
+							<option value="">중학교</option>
+							<option value="" selected="selected">고등학교</option>
+							<option value="">대학(2,3년)</option>
+							<option value="">대학(4년)</option>
+							<option value="">대학원</option>
+						</select>
+					</div>
+					<div class="cf_group group_2 sch_school"><!-- 학교명 검색 활성화 class : active -->
+						<input type="text" class="form_control" placeholder="학교명" value="">
+						<div class="sch_keyword_wrap">
+							<div class="sch_keyword">
+								<div class="data">
+									<div class="no_data">
+										<p>일치하는 학교명이 없습니다.</p>
+										<p class="key_in_text">‘서울대학교 보건대학원’ 입력</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cf_group">
+						<select class="form_control">
+							<option value="" selected="selected">계열선택</option>
+							<option value="">문과계열</option>
+							<option value="">이과계열</option>
+							<option value="">예체능계</option>
+							<option value="">전문(실업)계</option>
+						</select>
+					</div>
+					<div class="cf_group">
+						<select class="form_control">
+							<option value="" selected="selected">학적상태</option>
+							<option value="">재학</option>
+							<option value="">휴학</option>
+							<option value="">졸업</option>
+							<option value="">수료</option>
+							<option value="">중퇴</option>
+							<option value="">자퇴</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<!-- 대학, 대학원 -->
+			<div class="custom_form education">
+				<div class="inner fixed">
+					<div class="cf_group">
+						<select class="form_control">
+							<option value="">학교구분</option>
+							<option value="">초등학교</option>
+							<option value="">중학교</option>
+							<option value="">고등학교</option>
+							<option value="">대학(2,3년)</option>
+							<option value="" selected="selected">대학(4년)</option>
+							<option value="">대학원</option>
+						</select>
+					</div>
+					<div class="cf_group group_3 sch_school"><!-- 학교명 검색 활성화 class : active -->
+						<input type="text" class="form_control" placeholder="학교명" value="서울">
+						<div class="sch_keyword_wrap">
+							<div class="sch_keyword">
+								<div class="data">
+									<!-- <div class="no_data">
+										<p>일치하는 학교명이 없습니다.</p>
+										<p class="key_in_text">‘서울대학교 보건대학원’ 입력</p>
+									</div> -->
+									<ul class="data_list">
+										<li><a href="#"><em>서울</em>대학교</a></li>
+										<li><a href="#"><em>서울</em>대학교</a></li>
+										<li><a href="#"><em>서울</em>대학교</a></li>
+										<li><a href="#"><em>서울</em>대학교</a></li>
+										<li><a href="#"><em>서울</em>대학교</a></li>
+										<li><a href="#">직접입력</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cf_group group_3">
+						<input type="text" class="form_control" placeholder="전공명" value="">
+					</div>
+					<div class="cf_group">
+						<select class="form_control">
+							<option value="" selected="selected">계열선택</option>
+							<option value="">인문계</option>
+							<option value="">이공계</option>
+							<option value="">예체능계</option>
+						</select>
+					</div>
+					<div class="cf_group">
+						<select class="form_control">
+							<option value="" selected="selected">학년선택</option>
+							<option value="">1학년</option>
+							<option value="">2학년</option>
+							<option value="">3학년</option>
+							<option value="">4학년</option>
+							<option value="">5학년</option>
+							<option value="">6학년</option>
+						</select>
+					</div>
+					<div class="cf_group">
+						<select class="form_control">
+							<option value="" selected="selected">학적상태</option>
+							<option value="">재학</option>
+							<option value="">휴학</option>
+							<option value="">졸업</option>
+							<option value="">수료</option>
+							<option value="">중퇴</option>
+							<option value="">자퇴</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<!-- 날짜선택 -->
+			<div class="custom_form date">
+				<div class="inner fixed">
+					<div class="cf_group">
+						<input type="text" class="form_control" placeholder="YYYY.MM.DD">
+						<button class="btn_date"><span class="sr_only">시작일 선택</span></button>
+					</div>
+					<span class="form_divider">~</span>
+					<div class="cf_group">
+						<input type="text" class="form_control" placeholder="YYYY.MM.DD">
+						<button class="btn_date"><span class="sr_only">종료일 선택</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="form_group add_symbol">
+				<input type="text" class="form_control">
+				<button type="button" class="plus"><span>추가</span></button>
+			</div>
+
+			<div class="form_group add_symbol">
+				<input type="text" class="form_control">
+				<button type="button" class="minus"><span>제거</span></button>
+			</div>
+
+			<!-- 시간선택 -->
+			<p style="margin-top:30px">시간선택</p>
+			<div class="custom_form time">
+				<div class="inner fixed">
+					<div class="cf_group">
+						<input type="text" class="form_control non_border" placeholder="오전 00:00">
+						<button class="btn_time"><span class="sr_only">시작 시간</span></button>
+					</div>
+					<span class="form_divider">~</span>
+					<div class="cf_group">
+						<input type="text" class="form_control non_border" placeholder="오후 00:00">
+						<button class="btn_time"><span class="sr_only">종료 시간</span></button>
+					</div>
+				</div>
+			</div>
+
+			<!-- 키워드검색 -->
+			<p style="margin-top:30px">키워드검색</p>
+			<div class="custom_form search">
+				<div class="inner">
+					<div class="cf_group">
+						<input type="text" class="form_control" placeholder="# 키워드를 입력해주세요.">
+					</div>
+					<div class="btn_box">
+						<button class="btn_add"><span>추가하기</span></button>
+					</div>
+				</div>
+			</div>
+			<!-- 파일첨부 - 확정 -->
+			<p style="margin-top:30px">파일첨부 - 확정</p>
+			<div class="custom_form input_btn file">
+				<div class="inner">
+					<div class="cf_group">
+						<input type="text" class="form_control" placeholder="">
+					</div>
+					<div class="btns file_add">
+						<input type="file" id="add_file">
+						<label for="add_file" class="btn btn_lightgray btn_form"><span>파일찾기</span></label>
+					</div>
+				</div>
+				<div class="file_name">
+					<span class="name">
+						<a href="#"><span>첨부파일 이름.jpg</span></a>
+						<a href="#" class="delete">삭제</a>
+					</span>
+					<span class="name">
+						<a href="#"><span>첨부파일 이름.jpg</span></a>
+						<a href="#" class="delete">삭제</a>
+					</span>
+					<span class="name">
+						<a href="#"><span>첨부파일 이름.jpg</span></a>
+						<a href="#" class="delete">삭제</a>
+					</span>
+				</div>
+			</div>
+			<p style="margin-top:30px">이미지파일 첨부 - 확정</p>
+			<div class="custom_form add_image">
+				<div class="images">
+					<span class="group del">
+						<img src="/static/di/images/common/@thumb11.jpg" alt="">
+						<span class="delete">삭제</span>
+					</span>
+				</div>
+				<div class="images">
+					<span class="group">
+						<img src="/static/di/images/common/@thumb11.jpg" alt="">
+					</span>
+				</div>
+				<div class="file_add">
+					<span class="group">
+						<input type="file" id="add_file68">
+						<label for="add_file68"><span>파일선택</span></label>
+					</span>
+				</div>
+				<div class="file_add">
+					<span class="group">
+						<input type="file" id="add_file681">
+						<label for="add_file681"><span>파일선택</span></label>
+					</span>
+				</div>
+				<div class="file_add">
+					<span class="group">
+						<input type="file" id="add_file682">
+					<label for="add_file682"><span>파일선택</span></label>
+					</span>
+				</div>
+				<div class="file_add">
+					<span class="group">
+						<input type="file" id="add_file683">
+						<label for="add_file683"><span>파일선택</span></label>
+					</span>
+				</div>
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+
+
+	<h2 class="h2_guide">Range Slider</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div data-modules="rangeChart" data-options='{
+				"data" : [
+					0,0,0,0,10,0,0,0,0,0,
+					0,0,0,0,0,0,0,0,0,0,
+					3,3,4,5,0,0,0,20,20,20,
+					3,3,4,5,6,0,0,0,3,4,
+					3,3,4,5,6,2,4,10,3,4,
+					3,3,4,5,6,2,0,0,0,0,
+					3,3,4,5,6,2,2,0,0,0,
+					3,3,4,5,6,2,8,14,3,4,
+					3,3,4,5,6,2,6,6,3,4,
+					3,3,4,5,6,2,3,0,0,0
+				],
+				"canvasId" : "chart"
+			}'>
+				<div class="chart_wrap">
+					<div class="range_chart" data-selector="chart">
+						<span class="layers left-layer" data-selector="layer-left"></span>
+						<span class="layers right-layer" data-selector="layer-right"></span>
+						<div id="chart"></div>
+					</div>		
+				</div>
+				<div>
+					<div data-selector="slider" id="range" class="range_slider"></div>
+				</div>
+				<div data-selector="numStr">
+					<p class="min">0</p>
+					<p class="max">100</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<hr class="line">
+
+	<h2 class="h2_guide">Range Slider</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div id="rChart1" data-modules="rangeChart" data-options='{
+				"data" : [
+					0,0,0,0,0,0,0,0,0,0,
+					0,0,0,0,0,0,60,0,0,0,
+					3,3,4,5,0,0,0,20,20,20,
+					3,3,4,5,6,0,0,0,3,4,
+					3,3,4,5,6,2,4,10,3,4,
+					3,3,4,5,6,2,0,0,0,0,
+					3,3,4,5,6,2,2,0,0,0,
+					3,3,4,5,6,2,8,14,3,4,
+					3,3,4,5,6,2,6,6,3,4,
+					3,3,4,5,6,2,3,0,0,0
+				],
+				"canvasId" : "chart2"
+			}'>
+				<div class="chart_wrap">
+					<div class="range_chart" data-selector="chart">
+						<span class="layers left-layer" data-selector="layer-left"></span>
+						<span class="layers right-layer" data-selector="layer-right"></span>
+						<div id="chart2"></div>
+					</div>		
+				</div>
+				<div>
+					<div data-selector="slider" id="range" class="range_slider"></div>
+				</div>
+				<div data-selector="numStr">
+					<p class="min">0</p>
+					<p class="max">100</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<button id="resetBtn" type="button" class="btn btn_gray btn_sm round"><span>데이터 리셋</span></button>
+	<script>
+		$('#resetBtn').on('click', function(){
+			$('#rChart1').data('rangeChart').options.data = [
+				100,100,0,0,0,0,0,0,0,0,
+				0,0,0,0,0,0,60,0,0,0,
+				3,3,4,5,0,0,0,20,20,20,
+				3,3,4,15,6,0,0,0,3,4,
+				3,3,4,5,6,2,4,10,3,4,
+				3,3,4,5,6,2,0,0,0,0,
+				3,3,4,5,6,2,2,0,0,0,
+				3,3,4,5,6,2,8,14,3,4,
+				3,3,4,5,6,2,6,6,3,4,
+				3,3,4,5,6,2,3,0,0,0
+			]
+			$('#rChart1').rangeChart('reload')
+		})
+	</script>
+	<hr class="line">
+
+	<h2 class="h2_guide">Bar Chart</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="bar_chart"  data-modules="barChart" data-options='{
+				"data" : [50,60,100,20,40,50,20,30,40,50,50,50],
+				"canvasId" : "barChart"
+			}'>
+				<div class="chart_inner">
+					<span class="y_label type1"><i>100%</i></span>
+					<span class="y_label type2"><i>80%</i></span>
+					<span class="y_label type3"><i>60%</i></span>
+					<span class="y_label type4"><i>40%</i></span>
+					<span class="y_label type5"><i>20%</i></span>
+					<span class="y_label type6"><i>0%</i></span>
+				</div>
+				
+				<span class="labels">
+					<span class="data1">내자녀</span>
+					<span class="data2">동일과장</span>
+				</span>
+			</div>
+
+		</div>
+	</div>
+	<hr class="line">
+
+
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="your-class" data-modules="slick" data-options='{
+				"dots": false,
+				"infinite": false,
+				"speed": 300,
+				"slidesToShow": 1,
+				"centerMode": false,
+				"variableWidth": true
+			}'>
+				<div class="sl_conts">1your condsftent</div>
+				<div class="sl_conts">2your consdfsdftenterwrewrwe</div>
+				<div class="sl_conts">3your contsdfsdfsdent</div>
+				<div class="sl_conts">3your contsdfsdfsdent</div>
+			</div>
+			<script>
+			// $('.variable-width').slick();
+			</script>
+		</div>
+		<!-- <pre class="brush: xml;" data-hilight="code"></pre> -->
+	</div>
+	<hr class="line">
+
+<!--#include virtual="bottom.html" -->

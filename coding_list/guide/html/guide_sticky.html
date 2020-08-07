@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 스크립트가이드</title>
+	<link rel="SHORTCUT ICON" href="/coding_list/images/severance.ico"/>
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/shCoreDefault.css">
+<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+</head>
+<style>
+	.sticky{
+		
+		position: absolute;
+		top:400px;
+		left:0;
+	}
+	.sticky_inner{
+		border:1px solid red;
+	}
+	.sticky.fixed{
+		position: fixed;
+		top:400px;left:0;
+	}
+	#break{
+		border:1px solid red;
+	}
+</style>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Sticky</h1>
+	<div class="d_desc">
+		<p class="decs">[data-modules="stickyBox"]</p>
+		<p class="decs">페이지 스크롤 시 화면에 선택된 요소를 고정 시켜주는 기능</p>
+	</div>
+	<h2 class="h2_guide">options</h2>
+	<div class="d_desc">
+		<ul>
+			<li>padding : -Number&nbsp; &nbsp; //기본으로는 화면상단에 붙으면 작동, 수치 조절을 통해 작동 범위를 조절 할수 있음</li>
+			<li>breakPoint : "#ElementId"&nbsp; &nbsp; //전달된 셀렉터의 위치 밑으로는 내려가지 않음.</li>
+		</ul>
+	</div>
+	<h2 class="h2_guide">Method</h2>
+	<div class="d_desc">
+		<ul>
+			<li>없음</li>
+		</ul>
+	</div>
+	<div id="break">
+		이 박스 밑으로는 내려가지 않습니다.
+		<div class="sticky" data-modules="stickyBox" data-options='{
+			"padding":-400,
+			"breakPoint" : "#break"
+		}'>
+			<div class="sticky_inner">
+				스크롤을 내리면 이 요소가 화면에 고정됩니다.<br><br><br><br><br><br><br><br><br><br>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</div>
+</body>
+</html>

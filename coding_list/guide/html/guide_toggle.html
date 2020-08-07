@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 스크립트가이드</title>
+	<link rel="SHORTCUT ICON" href="/coding_list/images/severance.ico"/>
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/shCoreDefault.css">
+<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+</head>
+<style>
+	.test{
+		background: red;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+		line-height: 100px;
+		font-weight: 700;
+		font-size: 20px;
+		color: #fff;
+
+	}
+	.click1{
+		background: yellow;
+	}
+	.click2{
+		background: gray;
+	}
+	.click3{
+		background: blue;
+	}
+	.click4{
+		background: blueviolet;
+	}
+	.click5{
+		background: palegreen;
+	}
+	.click6{
+		background: gold;
+	}
+</style>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Class Toggle</h1>
+	<div class="d_desc">
+		<p class="decs">[data-modules="classesToggle"]</p>
+		<p class="decs">요소 클릭 시 옵션으로 전달된 클래스명 배열을 토글시킴</p>
+	</div>
+	<h2 class="h2_guide">options</h2>
+	<div class="d_desc">
+		<ul>
+			<li>classLists : Array&nbsp; &nbsp; //토글 시킬 클래스 리스트</li>
+		</ul>
+	</div>
+	<h2 class="h2_guide">Method</h2>
+	<div class="d_desc">
+		<ul>
+			<li>없음</li>
+		</ul>
+	</div>
+
+	<div class="test" data-modules="classesToggle" data-options='{
+		"classLists" : [
+			"click1",
+			"click2",
+			"click3",
+			"click4",
+			"click5",
+			"click6"
+		]
+	}'>
+		Click Me!
+	</div>
+</div>
+</body>
+</html>

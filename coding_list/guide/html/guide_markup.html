@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 상세규칙</title>
+	<link rel="SHORTCUT ICON" href="/coding_list/images/severance.ico"/>
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/shCoreDefault.css">
+	<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+	<style>
+		.d_list, .bx-table{margin-top:15px}
+		.d_list li{list-style: disc;list-style-position: inside;}
+		.table table{table-layout:fixed;}
+		.table table *{white-space:normal}
+	</style>
+	
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">상세규칙</h1>
+	<h2 class="h2_guide">HTML</h2>
+	<div class="dscBox">
+		<h3 class="h3_guide">파일명 규칙</h3>
+		<div class="lstDsc">
+			<p>YUHS_R_D_121 AEM 정의서 문서 내 01.SITE 정의서 기준으로 네이밍 작성. 파일명은 하이픈(-)으로 구분.</p>
+			<ul class="d_list">
+				<li>중복되는 파일명에 대해서는 SITE 정의서 내 이전 depth의 파일명 추가 기입</li>
+				<li>프로세스가 있거나, 한 화면에 여러가지 케이스가 있는 페이지는 뒤에 번호 추가 기입( 예 : /etc.clientlibs/sev/department/department_01.html, /etc.clientlibs/sev/department/department_02.html)</li>
+			</ul>
+		</div>
+		<h3 class="h3_guide">폴더구조</h3>
+		<div class="lstDsc">
+			<p><strong>기본 경로 :</strong> /etc.clientlibs/</p>
+			<div class="bx-table">
+				<div class="table">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col style="width:12.5%">
+							<col style="width:12.5%">
+							<col style="width:12.5%">
+							<col style="width:12.5%">
+							<col style="width:12.5%">
+							<col style="width:12.5%">
+							<col style="width:12.5%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">템플릿(layout)</th>
+								<td>/templete/</td>
+								<th scope="row">include<br><span class="small">(top, hearder, location, footer)</span></th>
+								<td>/includes/</td>
+								<th scope="row">CF게시판</th>
+								<td>/bbs/</td>
+								<th scope="row">컴포넌트</th>
+								<td>/components/</td>
+							</tr>
+							<tr>
+								<th scope="row">의료원</th>
+								<td>/yuhs/</td>
+								<th scope="row">채용</th>
+								<td>/recruit/</td>
+								<th scope="row">기금</th>
+								<td>/fund/</td>
+								<th scope="row"></th>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">대학군</th>
+								<td>/medical/</td>
+								<th scope="row">대학군 메인</th>
+								<td>/medical/main/</td>
+								<th scope="row">대학군 > 교육</th>
+								<td>/medicine/</td>
+								<th scope="row"></th>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">병원군</th>
+								<td>/sev/</td>
+								<th scope="row">병원군 인트로</th>
+								<td>/sev/intro/</td>
+								<th scope="row">병원군 메인</th>
+								<td>/sev/main/</td>
+								<th scope="row">건강정보</th>
+								<td>/health-info/</td>
+							</tr>
+							<tr>
+								<th scope="row">통합로그인센터</th>
+								<td>/member/</td>
+								<th scope="row">마이세브란스</th>
+								<td>/mysevrance/</td>
+								<th scope="row"></th>
+								<td></td>
+								<th scope="row"></th>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h2 class="h2_guide">CSS</h2>
+	<div class="dscBox">
+		<h3 class="h3_guide">폴더구조 및 파일명</h3>
+		<div class="lstDsc">
+			<p><strong>기본 경로 :</strong> /etc.clientlibs/yonsei/clientlibs/</p>
+			<div class="bx-table">
+				<div class="table">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col style="width:12.5%">
+							<col style="width:43.75%">
+							<col style="width:43.75%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">사이트</th>
+								<th scope="col">구조</th>
+								<th scope="col">파일명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">공통</th>
+								<td>/common/clientlib-site/</td>
+								<td>common</td>
+							</tr>
+							<tr>
+								<th scope="row">의료원군</th>
+								<td>/yuhs/clientlib-site/</td>
+								<td>custom</td>
+							</tr>
+							<tr>
+								<th scope="row">병원군</th>
+								<td>/hospital/clientlib-site/</td>
+								<td>custom</td>
+							</tr>
+							<tr>
+								<th scope="row">대학군</th>
+								<td>/university/clientlib-site/</td>
+								<td>custom</td>
+							</tr>
+							<tr>
+								<th scope="row">통합로그인센터</th>
+								<td>/common/clientlib-member/</td>
+								<td>login-center</td>
+							</tr>
+							<tr>
+								<th scope="row">마이세브란스</th>
+								<td>/mysev/clientlib-site/</td>
+								<td>mysevrance</td>
+							</tr>
+							<tr>
+								<th scope="row">건강정보</th>
+								<td>/hospital/clientlib-site/</td>
+								<td>custom-health</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="h2_guide">IMAGE</h2>
+	<div class="dscBox">
+		<h3 class="h3_guide">확장자</h3>
+		<div class="lstDsc">
+			<p>GIF(X*애니메이션 제외), JPEG(O), PNG8(O), PNG24(O)</p>
+		</div>
+		<h3 class="h3_guide">폴더구조</h3>
+		<div class="lstDsc">
+			<p><strong>기본 경로 :</strong> /etc.clientlibs/yonsei/clientlibs/</p>
+			<div class="bx-table">
+				<div class="table">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col style="width:12.5%">
+							<col style="width:43.75%">
+							<col style="width:43.75%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">사이트</th>
+								<th scope="col">구조</th>
+								<th scope="col">비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">공통<br><span class="small">(통합로그인센터, 마이세브란스 포함)</span></th>
+								<td>/common/clientlib-site/resources/image/</td>
+								<td class="al-left">
+									<ul class="d_list">
+										<li>icon : 아이콘 모음</li>
+										<li>main : 각 사이트 메인</li>
+										<li>www : 세브란스 대표 메인</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+									<th scope="row">의료원군</th>
+									<td>/yuhs/clientlib-site/resources/image/</td>
+									<td class="al-left">각 의료원군(의료원, 뉴스룸, 채용, 기금, 연구, 입찰) 로고</td>
+								</tr>
+							<tr>
+								<th scope="row">병원군<br><span class="small">(건강정보 포함)</span></th>
+								<td>/hospital/clientlib-site/resources/image/</td>
+								<td class="al-left">각 병원군 로고</td>
+							</tr>
+							<tr>
+								<th scope="row">대학군</th>
+								<td>/university/clientlib-site/resources/image/</td>
+								<td class="al-left">각 대학군 로고</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

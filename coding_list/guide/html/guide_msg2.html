@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 메시지 가이드</title>
+	<link rel="SHORTCUT ICON" href="/coding_list/images/severance.ico"/>
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/shCoreDefault.css">
+
+<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">커스텀 얼럿, 컴폼 메시지</h1>
+	<dl class="notice">
+		<dt>기본사항</dt>
+		<!-- <dd><span class="bold"></span>
+			<ol>
+				<li>.modal-sm : 300px</li>
+				<li>.modal-md : 600px</li>
+				<li>.modal-lg : 900px</li>
+				<li>.modal-wide : 1200px</li>
+			</ol>
+		</dd>
+		<dd class="bold">- 모달에 타이틀이 없는 경우 .modal에 alert-type 클래스 추가 </dd> -->
+	</dl>
+	
+	<h2 class="h2_guide">커스텀 얼럿</h2>
+	<div class="dscBox">
+		<button type="button" class="btn btn-info" id="testBTn">얼럿 창 호출</button>
+		<script>
+			var popupMsg = {
+					type : 'alert',
+					size : "modal-sm",
+					title : "임시 비밀 번호 발송",
+					message : "<p class='tit'>로그인 후 이용 가능한 서비스입니다.<br> 로그인 하시겠습니까?</p>\
+						<div class='checkbox not_show'>\
+    						<input type='checkbox' id='checkbox_primary'>\
+    						<label for='checkbox_primary' class='checkbox_label'>오늘하루 열지않음</label>\
+						</div>",
+					defaultCallback : function(){
+						alert('확인을 눌렀습니다.');
+					},
+					cancelCallback : function(){
+						alert('취소를 눌렀습니다.')
+					}
+				}
+			$('#testBTn').on('click', function(e){
+				DiepUi.customAlert(popupMsg);
+			});
+			$(window).on('load', function(){
+				setTimeout(function(){
+					DiepUi.customAlert(popupMsg)
+				}, 0)
+				
+			});
+		</script>
+<pre class="brush: xml;">
+<script>
+	// $('#testBTn').on('click', function(e){
+	// 	DiepUi.customAlert({
+	//		<!-- type : alert, confirm -->
+	// 		type : 'confirm',
+
+	//		<!-- 레이어팝업 타이틀 -->		
+	//		title : "임시 비밀 번호 발송",
+
+	//		<!-- 기본 구조는 <p></p> 이나 커스텀 가능 -->
+	// 		message : "<p>커스텀 얼럿을 호출 했습니다.</p>",
+
+	//		<!-- 기본 버튼 [ 기본 적용 시 생략, 전달 타입 : 태그 or 텍스트] -->
+	//		defaultBtn : '<button type="button" id="customMsgSubmit" class="btn btn-info"><span>확인</span></button>',
+
+	//		<!-- 기본 창 사이즈 [ 기본 적용 시 생략]  -->	
+	//		size : "modal-sm",
+
+	//		<!-- 기본 취소 버튼 [ 기본 적용 시 생략, 전달 타입 : 태그 or 텍스트] -->
+	//		cancelBtn : '<button type="button" id="customMsgCancel" class="btn btn-info"><span>취소</span></button>',
+
+
+	//		<!-- 기본 콜백  return 값으로 false 전달 시 레이어 닫힘 기능 차단-->
+	// 		defaultCallback : function(){
+	// 			alert('확인 누름')
+	// 		},
+
+	//		<!-- 취소 버튼 클릭 시 콜백 return 값으로 false 전달 시 레이어 닫힘 기능 차단 (type이 confirm 인 경우에만 유효함)-->
+	// 		cancelCallback : function(){}
+	// 	});
+	// });
+</script>
+</pre>
+	</div>
+
+
+</div>
+</body>
+</html>

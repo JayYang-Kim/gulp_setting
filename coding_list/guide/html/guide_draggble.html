@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 스크립트가이드</title>
+	<link rel="SHORTCUT ICON" href="/coding_list/images/severance.ico"/>
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/shCoreDefault.css">
+<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">draggble nav(카테고리형 게시판 메뉴 드래그 기능)</h1>
+	<pre class="brush: xml;">
+		
+		$(selector).draggbleNav()
+	</pre>
+	<h2 class="h2_guide">options</h2>
+	<div class="d_desc">
+		<ul>
+			<li>controls : Boolean, false(default)	//컨트롤 버튼 노출 유무</li>
+		</ul>
+	</div>
+
+	<h2 class="h2_guide">Event</h2>
+	<div class="d_desc">
+		<pre class="brush: xml;">
+			$(selector).on('selected', 'a', function(e){
+				console.log($(this)[0])
+			});
+		</pre>
+
+	</div>
+
+	<h2 class="h2_guide">Example</h2>
+	<div class="d_desc">
+		<ul>
+			<li><a href="/etc.clientlibs/bbs/bbs-list-category-type1.html" target="_blank">컴포넌트 > 게시판 > 카테고리 유형1</a></li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+</div>
+</body>
+</html>

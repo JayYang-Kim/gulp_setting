@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 이미지 가이드</title>
+	<link rel="SHORTCUT ICON" href="/coding_list/images/severance.ico"/>
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/shCoreDefault.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/shCoreDefault.css">
+
+<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script> -->
+<script>
+	// var draw = SVG().addTo('body').size(300, 300);
+	// var rect = draw.rect(100, 100).attr({ fill: '#f06' });
+</script>
+<style>
+
+</style>
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">반응형 호출 이미지</h1>
+	<h2 class="h2_guide">기본경로 : data-src, 테블릿 사이즈 : data-tablet, 모바일사이즈 : data-mobile</h2>
+	<div class="code_in">
+		<img src="/" class="current-img" data-mobile="/static/di/images/common/@banner_m.jpg" data-tablet="/static/di/images/common/@temp_thumb.jpg" data-src="/static/di/images/common/@banner.jpg" alt="이미지에 대한 설명 문구 기입">
+	</div>
+	<pre class="brush: xml;" data-hilight="code"></pre>
+
+
+
+
+	<div class="testttt">
+		<span>front</span>
+		<span>Back</span>
+	</div>
+	<script>
+		$('.testttt').on('click', function(){
+			$('.testttt').transition({
+				perspective: '400px',
+				rotateY: '90deg'
+			}, function(){
+				$(this).transition({
+					rotateY: '180deg'
+				})
+			});
+		})
+	</script>
+<!--#include virtual="bottom.html" -->

@@ -1,0 +1,1190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 리스트 형식 모듈</title>
+	<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+
+	<style>
+		.code_list_label .cardlists .labels, .code_list_label .cardlists .clip_join, .code_list_label .cardlists .clip{position:relative;display:block;transform: none;right:auto;left:auto;top:auto;bottom:auto;}
+	</style>
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">리스트 모듈</h1>
+	<h2 class="h2_guide">데이터 없음</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="lists_null_data">
+				<p class="main_txt">메인 타이틀</p>
+				<p class="sub_txt">서브 타이틀</p>
+				<div class="btn_sec">
+					<button type="button" class="btn btn_lg btn_primary go_add"><span>등록하러 가기</span></button>
+				</div>
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+
+	<h2 class="h2_guide">리스트 라벨</h2>
+	<div class="dscBox">
+		<div class="code_in code_list_label">
+			<div class="cardlists">
+				<div class="card_body">
+					<p style="color:#333;font-weight: bold;margin-bottom: 10px;">(학원, 수업)  전체 공통</p>
+					<span class="labels">
+						<span class="label global type01">신규</span>
+						<span class="label global type02">안심</span>
+						<span class="label global type03">전문</span>
+						<span class="label global type04">인기</span>
+						<span class="label global type05">우수</span>
+						<!-- <span class="label type01">우수</span>
+						<span class="label type02">인기</span>
+						<span class="label type03">비회원</span>
+						<span class="label type04">모집중</span>
+						<span class="label type05">그룹수업</span>
+						<span class="label type01">정규수업</span>
+						<span class="label type06">시범수업</span> -->
+						<!-- 200504_수정 [레이블 수정 예정] -->
+						<!-- <span class="label type01">우수</span>
+						<span class="label type02">인기</span>
+						<span class="label type09">신규</span>
+						<span class="label type10">안심</span>
+						<span class="label type11">전문</span>
+						<span class="label type03">비회원</span>
+						<span class="label type04">모집중</span>
+						<span class="label type05">그룹수업</span>
+						<span class="label type06">시범수업</span>
+						<span class="label type07">정규수업</span>
+						<span class="label type08">1:1수업</span>
+						<span class="label type12">온라인</span>
+						<span class="label type13">오프라인</span>
+						<span class="label type14">통신</span>
+						<span class="label type15">원데이 수업</span>
+						<span class="label type16">다회차 수업</span> -->
+					</span>
+					<br>
+					<br>
+					<br>
+					<br>
+					<span class="confirm type01">수락</span>
+					<span class="confirm type02">수락</span>
+					<span class="confirm type03">거절</span>
+					<span class="confirm type04">수락</span>
+					<span class="clip_join type01">연결</span>
+					<span class="clip_join type02">연결</span>
+					<span class="clip_join type03">연결</span>
+					<span class="clip">공지</span>
+				</div>
+			</div>
+		</div>
+		<!-- <pre class="brush: xml;" data-hilight="code"></pre> -->
+	</div>
+	<hr class="line">
+
+	<h2 class="h2_guide">리스트 유형</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div class="cp_rows">
+				<!-- 
+					length2
+					length3
+					length4
+					length5 : default
+				-->
+				<div class="card_lists_wrap">
+					<ul>
+						<li class="lists">
+							<div class="cardlists profiles">
+								<div class="card_header">
+									<span class="img_profile"><img src="/static/di/images/common/@temp_thumb_03.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>대치동2반 김준혁 김준혁 김준혁 김준혁</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>서울강남고등학교 1학년</i></span>
+											</dd>
+										</dl>
+										<div class="weeks_time">
+											<p>매주 월/목 20:00~22:00</p>
+										</div>
+										<div class="status">
+											<span class="status_box enabled">입실</span>
+											<!-- <span class="status_box disabled">퇴실</span> -->
+										</div>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<span class="clip_join type01">연결</span>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists profiles inset_more">
+								<div class="card_header">
+									<span class="img_profile"><img src="/static/di/images/common/@temp_thumb_03.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<!-- <span class="labels">
+										<span class="label type01">우수</span>
+										<span class="label type01">학원교사</span>
+										<span class="label type02">인기</span>
+										<span class="label type03">비회원</span>
+									</span> -->
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>대치동2반 김준혁2반 김준혁2반 김준혁</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>서울강남고등학교 1학년</i></span>
+											</dd>
+										</dl>
+										<div class="weeks_time">
+											<p>매주 월/목 20:00~22:00</p>
+										</div>
+										<div class="status">
+											<!-- <span class="status_box enabled">입실</span> -->
+											<span class="status_box disabled">퇴실</span>
+										</div>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="more_menu">
+									<div class="ui_dropdown">
+										<div class="dropdown">
+											<a id="dropMenu11" href="#" data-toggle="dropdown" aria-expanded="false" class="more_ico"><span>메뉴 더보기</span></a>
+											<ul class="dropdown-menu menu_lists" role="menu" aria-labelledby="dropMenu11">
+												<li><a href="#">menu1</a></li>
+												<li><a href="#">menu2</a></li>
+												<li><a href="#">menu2</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists profiles labels">
+								<div class="card_header">
+									<span class="img_profile"><img src="/static/di/images/common/@temp_thumb_03.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type01">우수</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>대치동2반 김준혁</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>서울강남고등학교 1학년</i></span>
+											</dd>
+										</dl>
+										<div class="feedback">
+											<span class="pull_left">
+												<span class="confirm type01">수락</span>
+												<!-- <span class="confirm type02">의견확인</span>
+												<span class="confirm type03">거절</span> -->
+											</span>
+											<span class="pull_right">
+												<span class="star_score">
+													<i class="ic">별점 5.0 기준</i><em class="txt">4.8</em>
+												</span>
+											</span>
+										</div>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="card_foot">
+									<div class="comment">
+										<p><span>같이가는 선생님, 목동영어쌤!</span></p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists profiles">
+								<div class="card_header">
+									<span class="img_profile"><img src="/static/di/images/common/@temp_thumb_03.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>대치동2반 김준혁</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>서울강남고등학교 1학년</i></span>
+											</dd>
+										</dl>
+										<dl class="req_classes">
+											<dt class="tit">수학</dt>
+											<dd class="time">24시간 남음</dd>
+										</dl>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="card_foot">
+									<div class="btns">
+										<a href="" class="btn"><span>상담톡</span></a>
+										<a href="" class="btn"><span>상세보기</span></a>
+									</div>
+								</div>                                    
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists profiles labels main_txts_only">
+								<div class="card_header">
+									<span class="img_profile"><img src="/static/di/images/common/@temp_thumb_03.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type01">학원교사</span>
+										<!-- <span class="label type03">비회원</span> -->
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>부산 김혜신</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>소개글 有  |  수업 3개</i></span>
+											</dd>
+										</dl>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="card_foot">
+									<div class="btns">
+										<a href="" class="btn"><span>이관하기</span></a>
+									</div>
+								</div>                                    
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists profiles labels main_txts_only">
+								<div class="card_header">
+									<span class="img_profile"><img src="/static/di/images/common/@temp_thumb_03.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type01">학원교사</span>
+										<!-- <span class="label type03">비회원</span> -->
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>부산 김혜신</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>소개글 有  |  수업 3개</i></span>
+											</dd>
+										</dl>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="card_foot">
+									<div class="btns">
+										<a href="" class="btn em"><span>수락</span></a>
+										<a href="" class="btn"><span>거절</span></a>
+									</div>
+								</div>                                    
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists profiles" data-modules="slick" data-options='{
+								"arrows": false,
+								"dots" :true
+							}'>
+								<div class="sliders">
+									<div class="card_header">
+										<span class="img_profile"><img src="/static/di/images/common/@temp_thumb_03.jpg" alt=""></span>
+									</div>
+									<div class="card_body">
+										<div class="inset">
+											<dl class="main_txts">
+												<dt class="tit">
+													<span><i>대치동2반 김준혁</i></span>
+												</dt>
+												<dd class="decs">
+													<span><i>서울강남고등학교 1학년</i></span>
+												</dd>
+											</dl>
+											<div class="weeks_time">
+												<p>매주 월/목 20:00~22:00</p>
+											</div>
+										</div>
+										<a href="" class="link">바로가기</a>
+									</div>
+									<div class="card_foot trains">
+										<div class="trains">
+											<span class="num"><i>0</i>/8회차</span>
+											<a href="" class="btn">수업리포트</a>
+										</div>
+									</div>  
+								</div>
+								<div class="sliders">
+									<div class="card_header">
+										<span class="img_profile"><img src="/static/di/images/common/@temp_thumb_03.jpg" alt=""></span>
+									</div>
+									<div class="card_body">
+										<div class="inset">
+											<dl class="main_txts">
+												<dt class="tit">
+													<span><i>대치동2반 김준혁</i></span>
+												</dt>
+												<dd class="decs">
+													<span><i>서울강남고등학교 1학년</i></span>
+												</dd>
+											</dl>
+											<div class="weeks_time">
+												<p>매주 월/목 20:00~22:00</p>
+											</div>
+										</div>
+										<a href="" class="link">바로가기</a>
+									</div>
+									<div class="card_foot trains">
+										<div class="trains">
+											<span class="num"><i>0</i>/8회차</span>
+											<a href="" class="btn">수업리포트</a>
+										</div>
+									</div>  
+								</div>
+																  
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists profiles">
+								<div class="card_header">
+									<span class="img_profile"><img src="/static/di/images/common/@temp_thumb_03.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>대치동2반 김준혁</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>서울강남고등학교 1학년</i></span>
+											</dd>
+										</dl>
+										<dl class="req_classes">
+											<dt class="tit">수학</dt>
+											<dd class="time">24시간 남음</dd>
+										</dl>
+										<div class="weeks_time">
+											<p>매주 월/목 20:00~22:00</p>
+										</div>
+										<div class="feedback">
+											<span class="pull_left">
+												<span class="confirm type01">수락</span>
+												<!-- <span class="confirm type02">의견확인</span>
+												<span class="confirm type03">거절</span> -->
+											</span>
+											<span class="pull_right">
+												<span class="star_score">
+													<i class="ic">별점 5.0 기준</i><em class="txt">4.8</em>
+												</span>
+											</span>
+										</div>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="card_foot">
+									<div class="comment">
+										<p><span>같이가는 선생님, 목동영어쌤!</span></p>
+									</div>
+									<div class="btns">
+										<a href="" class="btn"><span>상담톡</span></a>
+										<a href="" class="btn"><span>상세보기</span></a>
+									</div>
+									<div class="trains">
+										<span class="num"><i>0</i>/8회차</span>
+										<a href="" class="btn">일정변경</a>
+									</div>
+								</div>                                    
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists profiles labels main_txts_only">
+								<div class="card_header">
+									<span class="img_profile"><img src="/static/di/images/common/@temp_thumb_03.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type01">학원교사</span>
+										<!-- <span class="label type03">비회원</span> -->
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>부산 김혜신</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>소개글 有  |  수업 3개</i></span>
+											</dd>
+										</dl>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="card_foot">
+									<div class="btns">
+										<a href="" class="btn em"><span>수락</span></a>
+										<a href="" class="btn"><span>거절</span></a>
+									</div>
+								</div>
+								<div class="disabled_card">
+									<p>비활성화된 학원입니다.</p>
+									<a href="" class="close">삭제</a>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail labels">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type05">그룹수업</span>
+										<span class="label type04">모집중</span>
+										<span class="label global type01">신규</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>부산 김혜신</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>소개글 有  |  수업 3개</i></span>
+											</dd>
+										</dl>
+										<dl class="sub_txts">
+											<dt class="tit">
+												<span><i>대치킹갓쌤</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>서울대학교 수학과</i></span>
+											</dd>
+										</dl>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail labels">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type05">그룹수업</span>
+										<span class="label type04">모집중</span>
+										<span class="label global type02">안심</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>눈높이수학</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>눈높이영어보라매쌤 젊은쌤과함께하는 눈높이영어!</i></span>
+											</dd>
+										</dl>
+										<div class="weeks_time">
+											<p>매주 월/목 20:00 ~ 22:00</p>
+										</div>                                            
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="card_foot trains">
+									<div class="trains">
+										<span class="num"><i>6</i>/8회차</span>
+										<a href="" class="btn" tabindex="0">수업리포트</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail labels">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type03">임시저장</span>
+										<span class="label global type03">전문</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>등록을 완료해주세요</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>등록까지 10단계 남았습니다</i></span>
+											</dd>
+										</dl>
+										<div class="per">
+											<p>완료 40%</p>
+										</div>
+										
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail un_thumbnail labels">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type05">모집중</span>
+										<span class="label global type04">인기</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>화학 하위권을 위한 암기 최소화!</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>수능화학</i></span>
+											</dd>
+										</dl>
+										<div class="price">
+											<p class="pull_left txts">월 2회 <span>28만원</span></p>
+										</div>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="more_menu">
+									<div class="ui_dropdown">
+										<div class="dropdown">
+											<a id="dropMenu" href="#" data-toggle="dropdown" aria-expanded="false" class="more_ico"><span>메뉴 더보기</span></a>
+											<ul class="dropdown-menu menu_lists" role="menu" aria-labelledby="dropMenu">
+												<li><a href="#">menu1</a></li>
+												<li><a href="#">menu2</a></li>
+												<li><a href="#">menu2</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail labels">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type05">모집중</span>
+										<span class="label global type05">우수</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>화학 하위권을 위한 암기 최소화!</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>수능화학</i></span>
+											</dd>
+										</dl>
+										<div class="price">
+											<p class="pull_left txts">월 2회 <span>28만원</span></p>
+										</div>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="more_menu">
+									<div class="ui_dropdown">
+										<div class="dropdown">
+											<a id="dropMenu2" href="#" data-toggle="dropdown" aria-expanded="false" class="more_ico"><span>메뉴 더보기</span></a>
+											<ul class="dropdown-menu menu_lists" role="menu" aria-labelledby="dropMenu2">
+												<li><a href="#">menu1</a></li>
+												<li><a href="#">menu2</a></li>
+												<li><a href="#">menu2</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail labels">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type05">모집중</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>화학 하위권을 위한 암기 최소화!</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>수능화학</i></span>
+											</dd>
+										</dl>
+										<div class="price">
+											<p class="pull_left txts">월 2회 <span>28만원</span></p>
+											<a href="" class="pull_right status_box enabled">정원 2/5</a>
+										</div>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="more_menu white">
+									<div class="ui_dropdown">
+										<div class="dropdown">
+											<a id="dropMenu1" href="#" data-toggle="dropdown" aria-expanded="false" class="more_ico"><span>메뉴 더보기</span></a>
+											<ul class="dropdown-menu menu_lists" role="menu" aria-labelledby="dropMenu1">
+												<li><a href="#">menu1</a></li>
+												<li><a href="#">menu2</a></li>
+												<li><a href="#">menu2</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail labels">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type05">모집중</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>화학 하위권을 위한 암기 최소화!</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>수능화학</i></span>
+											</dd>
+										</dl>
+										<dl class="sub_txts">
+											<dt class="tit">
+												<span><i>대치킹갓쌤</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>서울대학교 수학과</i></span>
+											</dd>
+										</dl>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="card_foot">
+									<div class="req_feedback">
+										<div class="pull_left">
+											<p>1시간 전</p>
+										</div>
+										<div class="pull_right">
+											<span class="confirm type01">승인거절</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail labels">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type05">모집중</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>화학 하위권을 위한 암기 최소화!</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>수능화학</i></span>
+											</dd>
+										</dl>
+										<div class="sub_txts">
+											<p class="tit">
+												<span><i>대치동2반김하윤 외 4명</i></span>
+											</p>
+										</div>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="card_foot">
+									<div class="req_feedback">
+										<div class="pull_left">
+											<p>1시간 전</p>
+										</div>
+										<div class="pull_right">
+											<span class="confirm type01">승인거절</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail labels notice">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type05">모집중</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>화학 하위권을 위한 암기 최소화!</i></span>
+											</dt>
+											<dd class="decs sizeup">
+												<span><i>2019.11.01 ~ 2020.01.27</i></span>
+											</dd>
+										</dl>
+									</div>
+									<a href="" class="link">바로가기</a>
+									<span class="clip">공지</span>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail labels">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type05">모집중</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>상위권을 위한 수능수학 상위권을 
+													위한 수능수학</i></span>
+											</dt>
+											<dd class="decs star">
+												<span><i>대치킹갓쌤대치킹갓쌤</i></span>
+												<span class="star_score">
+													<i class="ic">별점 5.0 기준</i><em class="txt">4.8</em>
+												</span>
+											</dd>
+										</dl>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail labels">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type05">모집중</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>화학 하위권을 위한 암기 최소화!</i></span>
+											</dt>
+											<dd class="decs sizeup">
+												<span><i>2019.11.01 ~ 2020.01.27</i></span>
+											</dd>
+										</dl>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="disabled_card">
+									<p>종료된<br>소식/행사입니다.</p>
+									<a href="" class="close">삭제</a>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail un_thumbnail labels zzim">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type05">모집중</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>상위권을 위한 수능수학 상위권을 
+													위한 수능수학</i></span>
+											</dt>
+											<dd class="decs star">
+												<span><i>대치킹갓쌤대치킹갓쌤</i></span>
+												<span class="star_score">
+													<i class="ic">별점 5.0 기준</i><em class="txt">4.8</em>
+												</span>
+											</dd>
+										</dl>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<a href="" class="ico_like" data-modules="classesToggle" data-options='{
+									"classLists": [
+										"active"
+									]
+								}'>좋아요 클릭</a>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail un_thumbnail labels zzim">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type05">모집중</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>상위권을 위한 수능수학 상위권을 
+													위한 수능수학</i></span>
+											</dt>
+											<dd class="decs star">
+												<span><i>대치킹갓쌤대치킹갓쌤</i></span>
+												<span class="star_score">
+													<i class="ic">별점 5.0 기준</i><em class="txt">4.8</em>
+												</span>
+											</dd>
+										</dl>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<a href="" class="ico_like" data-modules="classesToggle" data-options='{
+									"classLists": [
+										"active"
+									]
+								}'>좋아요 클릭</a>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists zzim labels">
+								<div class="card_header">
+									<span class="img_profile"><img src="/static/di/images/common/@temp_thumb_03.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<span class="labels">
+										<span class="label type01">우수</span>
+										<span class="label type02">인기</span>
+									</span>
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>대치동2반 김준혁</i></span>
+											</dt>
+											<dd class="decs star">
+												<span><i>대치킹갓쌤대치킹갓쌤</i></span>
+												<span class="star_score">
+													<i class="ic">별점 5.0 기준</i><em class="txt">4.8</em>
+												</span>
+											</dd>
+										</dl>
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<a href="" class="ico_like" data-modules="classesToggle" data-options='{
+									"classLists": [
+										"active"
+									]
+								}'>좋아요 클릭</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="card_lists_wrap length2">
+					<ul>
+						<li class="lists">
+							<div class="cardlists review">
+								<div class="card_header">
+									<span class="star_rating_box">
+										<span class="star left active">0.5</span>
+										<span class="star right active">1.0</span>
+										<span class="star left active">1.5</span>
+										<span class="star right active">2.0</span>
+										<span class="star left active">2.5</span>
+										<span class="star right">3.0</span>
+										<span class="star left">3.5</span>
+										<span class="star right">4.0</span>
+										<span class="star left">4.5</span>
+										<span class="star right">5.0</span>
+										<span class="nickname">인서울학생</span>
+									</span>
+								</div>
+								<div class="card_body">
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>
+													<span class="tags">
+														<span class="best">BEST</span>
+														<span class="real_review">실제 수강생 후기</span>
+													</span>
+													<span class="txts">실질적인 문제풀이 위주 수업이라 좋았어요!  실질적인 문제풀이 위주 수업이라 실질적인 문제풀이 위주 수업이라 좋았어요!  실질적인 문제풀이 위주 수업이라</span>
+												</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>실질적인 문제풀이 위주 수업이라 좋았어요!  실질적인 문제풀이 위주 수업이라 실질적인 문제풀이 위주 수업이라 좋았어요!  실질적인 문제풀이 위주 수업이라실질적인 문제풀이 위주 수업이라 좋았어요!  실질적인 문제풀이 위주 수업이라 실질적인 문제풀이 위주 수업이라 좋았어요!  실질적인 문제풀이 위주 수업이라실질적인 문제풀이 위주 수업이라 좋았어요!  실질적인 문제풀이 위주 수업이라 실질적인 문제풀이 위주 수업이라 좋았어요!  실질적인 문제풀이 위주 수업이라</i></span>
+											</dd>
+											<dd class="sub">
+												<span class="date">1주전</span>
+												<span class="reple">답글보기1</span>
+											</dd>
+										</dl>
+									</div>
+								</div>
+								<div class="more_menu">
+									<div class="ui_dropdown">
+										<div class="dropdown">
+											<a id="dropMenu111" href="#" data-toggle="dropdown" aria-expanded="false" class="more_ico"><span>메뉴 더보기</span></a>
+											<ul class="dropdown-menu menu_lists" role="menu" aria-labelledby="dropMenu111">
+												<li><a href="#">베스트리뷰 선정</a></li>
+												<li><a href="#">신고하기</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<a href="" class="link">바로가기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="card_lists_wrap length2">
+					<ul>
+						<li class="lists">
+							<div class="classclists">
+								<div class="card_body">
+									<div class="inset">
+										<span class="labels">
+											<span class="label type04">수학</span>
+										</span>
+										<div class="main_txts">
+											<p class="tit"><span><i>[現 대치 의대, 최상위권 전문]  </i></span></p>
+										</div>
+										<div class="sub_txts">
+											<p clas="decs">서울강남고등학교 1학년</p>
+										</div>
+										<div class="trains">
+											<span class="date">매주 월/목 20:00~22:00</span>
+											<span class="num"><i>6</i>/8회차</span>
+										</div>
+									</div>
+								</div>
+								<div class="card_foot">
+									<div class="btns">
+										<a href="" class="btn"><span>수업중단</span></a>
+										<a href="" class="btn"><span>수업일정 변경</span></a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="classclists">
+								<div class="card_body">
+									<div class="inset">
+										<span class="labels">
+											<span class="label type04">수학</span>
+										</span>
+										<div class="main_txts">
+											<p class="tit"><span><i>대규대규이규희의 수학수업 4회차</i></span></p>
+										</div>
+										<div class="trains">
+											<span class="date">2019년 11월 27일 목요일</span>
+											<span class="confirm">승인거절</span>
+										</div>
+									</div>
+								</div>
+								<div class="more_menu">
+									<div class="ui_dropdown">
+										<div class="dropdown">
+											<a id="dropMenu11" href="#" data-toggle="dropdown" aria-expanded="false" class="more_ico"><span>메뉴 더보기</span></a>
+											<ul class="dropdown-menu menu_lists" role="menu" aria-labelledby="dropMenu11">
+												<li><a href="#">menu1</a></li>
+												<li><a href="#">menu2</a></li>
+												<li><a href="#">menu2</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="card_lists_wrap length4">
+					<ul>
+						<li class="lists">
+							<div class="cardlists thumbnail un_thumbnail inset_more">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>눈높이수학</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>15:00~17:00 (월/수/금)</i></span>
+											</dd>
+										</dl>
+										<div class="member">
+											<span>김우빈강사</span>
+										</div>                                            
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="more_menu white">
+									<div class="ui_dropdown">
+										<div class="dropdown">
+											<a id="dropMenu1" href="#" data-toggle="dropdown" aria-expanded="false" class="more_ico"><span>메뉴 더보기</span></a>
+											<ul class="dropdown-menu menu_lists" role="menu" aria-labelledby="dropMenu1">
+												<li><a href="#">비노출</a></li>
+												<li><a href="#">수정</a></li>
+												<li><a href="#">삭제</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="lists">
+							<div class="cardlists thumbnail un_thumbnail inset_more">
+								<div class="card_header">
+									<span class="img_thumbnail"><img src="/static/di/images/common/@temp_thumb_04.jpg" alt=""></span>
+								</div>
+								<div class="card_body">
+									<div class="inset">
+										<dl class="main_txts">
+											<dt class="tit">
+												<span><i>프리미엄룸(A타입)</i></span>
+											</dt>
+											<dd class="decs">
+												<span><i>룸 타입</i></span>
+											</dd>
+										</dl>
+										<div class="member">
+											<span>10인~12인</span>
+										</div>                                            
+									</div>
+									<a href="" class="link">바로가기</a>
+								</div>
+								<div class="more_menu">
+									<div class="ui_dropdown">
+										<div class="dropdown">
+											<a id="dropMenu4" href="#" data-toggle="dropdown" aria-expanded="false" class="more_ico"><span>메뉴 더보기</span></a>
+											<ul class="dropdown-menu menu_lists" role="menu" aria-labelledby="dropMenu4">
+												<li><a href="#">비노출</a></li>
+												<li><a href="#">수정</a></li>
+												<li><a href="#">삭제</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- <pre class="brush: xml;" data-hilight="code"></pre> -->
+	</div>
+
+	<dl class="notice" id="list_notice">
+		<dt>※ 모바일 모드변경 버튼( <span class="btn_mode">모드변경</span> ) 클릭 시 전환 방법</dt>
+		<dd style="font-weight: bold;">추가 클래스 : un_thumbnail</dd>
+		<dd>
+			<img src="/coding_list/guide/images/list1.gif" alt="">
+			<img src="/coding_list/guide/images/list2.gif" alt="">
+		</dd>
+	</dl>
+	<hr class="line">
+
+	<h2 class="h2_guide">수업카드, 프로필카드</h2>
+	<div class="dscBox">
+		<div class="code_in">
+			<div>
+				<div class="profile_card">
+					<div class="images">
+						<span class="img_profile"><img src="/static/di/images/common/@temp_thumb_03.jpg" alt=""></span>
+					</div>
+					<div class="main_txts">
+						<div class="tit">
+							<span><i>대치이현주</i></span>
+						</div>
+						<div class="desc">
+							<span><i>daechihj</i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="thumbnail">
+				<div class="profile_card">
+					<div class="images">
+						<span class="img_profile">
+							<img src="/static/di/images/common/@temp_thumb_04.jpg" alt="">
+						</span>
+					</div>
+					<div class="main_txts">
+						<div class="labels">
+							<span class="label type04">수학</span>
+						</div>
+						<div class="tit">
+							<span><i>[경력17년] 現대치 의대, 최상위권 전문</i></span>
+						</div>
+						<div class="desc">
+							<span><i>대치이현주</i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<div class="profile_card">
+					<div class="images">
+						<span class="img_profile">
+							<img src="/static/di/images/common/@book.png" alt="">
+						</span>
+					</div>
+					<div class="main_txts">
+						<div class="tit">
+							<span><i>[경력17년] 現대치 의대, 최상위권 전문</i></span>
+						</div>
+						<div class="desc">
+							<span><i>대치이현주</i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<pre class="brush: xml;" data-hilight="code"></pre>
+	</div>
+	<hr class="line">
+
+<!--#include virtual="bottom.html" -->

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 기본 가이드</title>
+
+	<link rel="SHORTCUT ICON" href="/coding_list/images/severance.ico"/>
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/shCoreDefault.css">
+
+<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+<style>
+	*{line-height: 1.6;letter-spacing: .2px !important;}
+	a{text-decoration: underline;}
+	.lstDsc{
+		margin-bottom: 120px;
+	}
+</style>
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">기본사항</h1>
+	<div class="dscBox">
+		<h3 class="h3_guide">기본 설치</h3>
+		<div class="lstDsc">
+			<dl>
+				<dt><strong class="mt-1">node.js</strong> &nbsp; &nbsp; &nbsp; * 현재 사용중인 버전 12.14.0</dt>
+				<dd><a href="https://nodejs.org/download/release/v12.14.0/" target="_blank">다운로드 링크</a></dd>
+				<dt><strong class="mt-1">gulp.js</strong> &nbsp; &nbsp; &nbsp;* 현재 사용중인 버전 2.2.0</dt>
+				<dd> <a href="https://gulpjs.com/docs/en/getting-started/quick-start" target="_blank">다운로드 링크</a></dd>
+			</dl>
+		</div>
+
+		<h3 class="h3_guide">대표적인 gulp.js 사용 모듈</h3>
+		<div class="lstDsc">
+			<dl>
+				<dt></dt>
+				<dt><strong class="mt-1">gulp-sass</strong> &nbsp; &nbsp; &nbsp;</dt>
+				<dd>scss 컴파일용 플러그인</dd>
+				<dt><strong class="mt-1">gulp-babel</strong> &nbsp; &nbsp; &nbsp;</dt>
+				<dd>js 컴파일용 플러그인</dd>
+				<dt><strong class="mt-1">gulp-connect</strong> &nbsp; &nbsp; &nbsp;</dt>
+				<dd>로컬 라이브서버</dd>
+				<dt><strong class="mt-1">gulp-connect-ssi</strong> &nbsp; &nbsp; &nbsp;</dt>
+				<dd>connect 라이브서버에서 SSI를 사용 가능하게 해주는 플러그인</dd>
+				<dd>include 기본 세팅은 아파치 SSI 환경으로 설정되어 있습니다. <a href="https://httpd.apache.org/docs/2.4/ko/howto/ssi.html" target="_blank">관련 링크</a></dd>
+			</dl>
+		</div>
+
+		<h3 class="h3_guide">기준 해상도</h3>
+		<div class="lstDsc">
+			<p><strong>PC &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;:</strong> 최소 1024px 이상</p>
+			<p><strong>Tablet &nbsp; :</strong> 768px ~ 1024px</p>
+			<p><strong>Mobile &nbsp;:</strong> 360px ~ 767px</p>
+		</div>
+
+		<h3 class="h3_guide">크로스브라우징 범위</h3>
+		<div class="lstDsc">
+			<dl>
+				<dt><strong>PC</strong></dt>
+				<dd><b>Window</b> :  주 대상 브라우저(Chrome 최신버전), 호환성 브라우저(Internet Explorer 10~11, edge)</dd>
+				<dd><b>MAC</b> : Safari 최신버전 ※ 애플社에서 2012년 10월이후 윈도우 Safari 지원안함</dd>
+				<dt class="mt-1"><strong>Tablet / Mobile</strong></dt>
+				<dd>모바일 기기에서 제공하는 OS의 기본 브라우저 및 크롬 APP</dd>
+			</dl>
+		</div>
+
+		<h3 class="h3_guide">테스트 단말 (Tablet, mobile)</h3>
+		<div class="lstDsc">
+			<p>iPhone XR, Galaxy S10+, iPad Air,  Galaxy TAB S5e </p>
+		</div>
+
+		<h3 class="h3_guide">DTD / language TYPE / Encoding 선언</h3>
+		<div class="lstDsc">
+		<pre class="brush: xml;">
+			&lt;!DOCTYPE html>
+			&lt;html lang="ko">
+			&lt;head>
+			&lt;meta charset="utf-8"></pre>
+		</div>
+		<h3 class="h3_guide">프로젝트 경로(Front)</h3>
+		<br>
+		<dl>
+			<dt><strong class="mt-1">html</strong> &nbsp; &nbsp; &nbsp;</dt>
+			<dd></dd>
+			<dd>/Root/html/<br><br></dd>
+			<dt><strong class="mt-1">html include</strong> &nbsp; &nbsp; &nbsp;* html 내에 공통 요소들 예) top, header, footer 등</dt>
+			<dd>/Root/html/includes/<br><br></dd>
+			<dt><strong class="mt-1">scss 공통 요소</strong> &nbsp; &nbsp; &nbsp;* 프론트단 모든 scss파일에서 공유하는 변수, 믹스인, 함수 등 모음, 외부 라이브러리 css</dt>
+			<dd>/Root/static/asset/common_scss/<br><br></dd>
+			<dt><strong class="mt-1">scss</strong> &nbsp; &nbsp; &nbsp;</dt>
+			<dd>/Root/static/asset/scss/<br><br></dd>
+			<dt><strong class="mt-1">css</strong> &nbsp; &nbsp; &nbsp;* scss 생성 및 수정 작업 후 저장 시 자동으로 컴파일되어 같은 이름의 css파일(min)로 생성됩니다. 직접수정 금지(수정은 scss파일을 통해서만 진행 해주세요.)</dt>
+			<dd>/Root/static/di/css/<br><br></dd>
+			<dt><strong class="mt-1">js 작성용</strong> &nbsp; &nbsp; &nbsp;* 수정은 이쪽 파일에서 진행 해주세요.(ES6문법 사용 가능)</dt>
+			<dd>/Root/static/asset/js/<br><br></dd>
+			<dt><strong class="mt-1">js 배포용</strong> &nbsp; &nbsp; &nbsp;* 작업 후 저장 시 자동으로 컴파일되어 같은 이름의 js파일(min)로 생성됩니다.</dt>
+			<dd>/Root/static/di/js/<br><br></dd>
+			<dt><strong class="mt-1">images</strong> &nbsp; &nbsp; &nbsp;</dt>
+			<dd>/Root/static/di/images/<br><br></dd>
+			<dt><strong class="mt-1">font</strong> &nbsp; &nbsp; &nbsp;</dt>
+			<dd>/Root/static/di/fonts/<br><br><br><br></dd>
+		</dl>
+		<h3 class="h3_guide">프로젝트 경로(admin)</h3>
+		<br>
+		<dl>
+			<dt><strong class="mt-1">html</strong> &nbsp; &nbsp; &nbsp;</dt>
+			<dd></dd>
+			<dd>/Root/admin/html/<br><br></dd>
+			<dt><strong class="mt-1">html include</strong> &nbsp; &nbsp; &nbsp;* html 내에 공통 요소들 예) top, header, footer 등</dt>
+			<dd>/Root/admin/includes/<br><br></dd>
+			<dt><strong class="mt-1">scss</strong> &nbsp; &nbsp; &nbsp;</dt>
+			<dd>/Root/admin/scss/<br><br></dd>
+			<dt><strong class="mt-1">css</strong> &nbsp; &nbsp; &nbsp;</dt>
+			<dd>/Root/admin/css/<br><br></dd>
+			<dt><strong class="mt-1">js</strong> &nbsp; &nbsp; &nbsp;* admin js는 별도 컴파일 절차 없음</dt>
+			<dd>/Root/admin/js/<br><br></dd>
+			<dt><strong class="mt-1">images</strong> &nbsp; &nbsp; &nbsp;</dt>
+			<dd>/Root/admin/images/<br><br></dd>
+			<dt><strong class="mt-1">font</strong> &nbsp; &nbsp; &nbsp;</dt>
+			<dd>/Root/admin/fonts/<br><br><br><br></dd>
+		</dl>
+	</div>	
+</div>
+</body>
+</html>

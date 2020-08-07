@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>대교 스크립트가이드</title>
+	<link rel="SHORTCUT ICON" href="/coding_list/images/severance.ico"/>
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/guide/shCoreDefault.css">
+<!--#include virtual="/coding_list/guide/html/file_link.html" -->
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Scroll Tab</h1>
+	<pre class="brush: xml;">
+		1.data 속성을 이용한 호출
+		<div data-module="scrollTab" data-options='{
+			options
+		}'>
+	
+		</div>
+
+
+		2.직접 호출
+		$('selector').scrollTab({
+			options
+		});
+	</pre>
+	<h2 class="h2_guide">Options</h2>
+	<div class="d_desc">
+		<ul>
+			<li>class : null(default), String -- 클래스 분기가 필요할 경우 사용</li>
+		</ul>
+	</div>
+
+	<h2 class="h2_guide">Method</h2>
+	<div class="d_desc">
+		<ul>
+			<li>$('selector').scrollTab('refresh') -- 텝 사이즈 재 정의</li>
+		</ul>
+	</div>
+
+	<h2 class="h2_guide">Example</h2>
+	<div class="d_desc">
+		<ul>
+			<li><a href="/etc.clientlibs/components/cp_title.html" target="_blank">컴포넌트 > Title & Tab</a></li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+</div>
+</body>
+</html>

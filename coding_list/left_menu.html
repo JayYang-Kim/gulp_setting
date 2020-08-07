@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>DIEP Publising 코딩진행표</title>
+<link rel="stylesheet" href="/coding_list/guide/base.css">
+<script src="/coding_list/js/vendors/jquery-2.2.4.min.js"></script>
+<script src="/coding_list/guide/dtree.js"></script>
+</head>
+<body style="background:#f7f7f7">
+<div id="wrap">
+	<h1 class="titH1"><span>DIEP</span></h1>
+	<div class="status">
+		<h2>페이지 작업 상태</h2>
+		<ol>
+			<li><span class="t-ready">대기</span></li>
+			<li><span class="t-ing">작업중</span></li>
+			<!-- <li><span class="t-modify">수정</span></li> -->
+			<li><span class="t-confirm">검수요청</span></li>
+			<li><span class="t-complete">완료(개발가능)</span></li>
+		</ol>
+	</div>
+	<div class="dtree-wrap">
+		<p><a href="javascript: aa.openAll();"><img src="/coding_list/guide/images/btn_expand.gif" alt="Expand All" /></a> <a href="javascript: aa.closeAll();"><img src="/coding_list/guide/images/btn_collapse.gif" alt="Collapse All" /></a></p>
+		<script type="text/javascript">
+			var tree = {
+				'WSG': {
+					'업무 가이드': {
+						'기본가이드': ['/coding_list/guide/html/guide.html', '', 'mainFrame'],
+						'로컬호스트': ['/coding_list/guide/html/guide_localhost.html', '', 'mainFrame']
+						// '상세규칙': ['/coding_list/guide/html/guide_markup.html', '', 'mainFrame'],
+					},
+					'퍼블리싱 가이드': {
+						'전체 공통': ['/coding_list/guide/html/guide_etc.html', '', 'mainFrame'],
+						'텝': ['/coding_list/guide/html/guide_tab.html', '', 'mainFrame'],
+						'아코디언': ['/coding_list/guide/html/guide_collapse.html', '', 'mainFrame'],
+						'드롭다운': ['/coding_list/guide/html/guide_dropdown.html', '', 'mainFrame'],
+						'툴팁': ['/coding_list/guide/html/guide_tooltip.html', '', 'mainFrame'],
+						'이미지': ['/coding_list/guide/html/guide_image.html', '', 'mainFrame'],
+						'아이콘': ['/coding_list/guide/html/guide_icon.html', '', 'mainFrame'],
+						
+						'계단식 그리드': ['/coding_list/guide/html/guide_grid.html', '', 'mainFrame'],
+						'리스트': ['/coding_list/guide/html/guide_lists.html', '', 'mainFrame'],
+						'폰트': ['/coding_list/guide/html/guide_font.html', '', 'mainFrame'],
+						// '폰트 테스트1': ['/coding_list/guide/html/guide_font-test.html', '', 'mainFrame'],
+						// '폰트 테스트2': ['/coding_list/guide/html/guide_font-test-bold.html', '', 'mainFrame'],
+						// '폰트 테스트3': ['/coding_list/guide/html/guide_font-test-exbold.html', '', 'mainFrame'],
+						'버튼': ['/coding_list/guide/html/guide_btn.html', '', 'mainFrame'],
+						// '아이콘': ['/coding_list/guide/html/guide_icon.html', '', 'mainFrame'],
+						'입력서식': ['/coding_list/guide/html/guide_form.html', '', 'mainFrame'],
+						// '테이블': ['/coding_list/guide/html/guide_table.html', '', 'mainFrame'],
+						// '알림 / 확인 메세지': ['/coding_list/guide/html/guide_msg.html', '', 'mainFrame'],
+						// '커스텀 얼럿, 컴폼': ['/coding_list/guide/html/guide_msg2.html', '', 'mainFrame'],
+						'기본이미지': ['/coding_list/guide/html/guide_default_img.html', '', 'mainFrame'],
+						'페이지 로딩': ['/coding_list/guide/html/guide_loading.html', '', 'mainFrame'],
+					},
+					'스크립트 가이드': {
+						// cardUi, customAlert, draggble, event, form, jumpTo, layout, scrollTab, treeMenu, util
+						// '공통': ['/coding_list/guide/html/guide_script.html', '', 'mainFrame'],
+						'외부 라이브러리': ['/coding_list/guide/html/guide_plugin.html', '', 'mainFrame'],
+						'layout': ['/coding_list/guide/html/guide_layout2.html', '', 'mainFrame'],
+						'커스텀 얼럿, 컴폼': ['/coding_list/guide/html/guide_msg2.html', '', 'mainFrame'],
+						'stickyBox': ['/coding_list/guide/html/guide_sticky.html', '', 'mainFrame'],
+						'classtoggle': ['/coding_list/guide/html/guide_toggle.html', '', 'mainFrame']
+						// 'cardUi': ['/coding_list/guide/html/guide_cardui.html', '', 'mainFrame'],
+						// 'customAlert': ['/coding_list/guide/html/guide_customalert.html', '', 'mainFrame'],
+						// 'draggble': ['/coding_list/guide/html/guide_draggble.html', '', 'mainFrame'],
+						// 'event': ['/coding_list/guide/html/guide_event.html', '', 'mainFrame'],
+						// 'jumpTo': ['/coding_list/guide/html/guide_jumpto.html', '', 'mainFrame'],
+						// 'scrollTab': ['/coding_list/guide/html/guide_scrollTab.html', '', 'mainFrame'],
+						// 'treeMenu': ['/coding_list/guide/html/guide_treemenu.html', '', 'mainFrame']
+					},
+					'Snippets가이드': ['/coding_list/guide/html/guide_snippets.html', '', 'mainFrame'],
+					'진행표 URL 복사(Gitlab에 붙여넣을때 사용)': ['/coding_list/guide/html/guide_copy.html', '', 'mainFrame']
+				}
+			};
+
+			var aa = new dTree('aa', tree);
+			document.write(aa);
+		</script>
+	</div>
+</div>
+</body>
+</html>
+
+
